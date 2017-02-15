@@ -27,3 +27,12 @@ Fichier de configuration de base des clés ssh.
 ```
 $ cp ssh/config ~/.ssh/config
 ```
+
+### ZSH
+
+Fichier ```.zshrc``` pour ma configuration zsh.
+
+```
+$ cp spaceship.zsh-theme ~/.oh-my-zsh/themes/spaceship.zsh-theme
+$ cp zsh/.zshrc ~/.zshrc
+``
