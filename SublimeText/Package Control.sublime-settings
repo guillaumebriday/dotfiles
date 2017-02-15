@@ -1,0 +1,24 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"All Autocomplete",
+		"Better CoffeeScript",
+		"BracketHighlighter",
+		"Color Highlighter",
+		"DocBlockr",
+		"Emmet",
+		"GitGutter",
+		"Indent XML",
+		"Jade",
+		"Laravel Blade Highlighter",
+		"MarkdownHighlighting",
+		"Package Control",
+		"Sass",
+		"SublimeERB",
+		"Theme - Spacegray"
+	]
+}

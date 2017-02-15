@@ -1,0 +1,5 @@
+[
+  { "keys": ["ctrl+shift+w"], "command": "toggle_setting", "args": {"setting": "word_wrap"}},
+  { "keys": ["ctrl+shift+t"], "command": "open_recent_file", "args": {"index" : 0} },
+  { "keys": ["ctrl+k"], "command": "toggle_side_bar" }
+]
