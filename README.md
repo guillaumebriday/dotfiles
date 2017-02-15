@@ -35,4 +35,8 @@ Fichier ```.zshrc``` pour ma configuration zsh.
 ```
 $ cp spaceship.zsh-theme ~/.oh-my-zsh/themes/spaceship.zsh-theme
 $ cp zsh/.zshrc ~/.zshrc
-``
+```
+
+### BetterTouchTool
+
+Export de la configuration de BetterTouchTool. Il suffit de l'importer via l'interface de BTT.
