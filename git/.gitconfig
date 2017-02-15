@@ -1,0 +1,12 @@
+[user]
+	name = Guillaume Briday
+	email = guillaumebriday@gmail.com
+[core]
+	editor = nano
+	excludesfile = ~/.gitignore_global
+[pull]
+	rebase = true
+[merge]
+	ff = false
+[color]
+	ui = true

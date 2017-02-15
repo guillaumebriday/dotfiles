@@ -1,0 +1,22 @@
+# Databases
+*.sql
+
+# Php
+.php_cs.cache
+vendor/
+
+# Node
+node_modules/
+bower_components
+
+# Ansible
+*.retry
+
+# Vagrant
+.vagrant/
+
+# macOS
+*.DS_Store
+
+# Logs
+*.log
