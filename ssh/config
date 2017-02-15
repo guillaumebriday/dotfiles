@@ -1,0 +1,15 @@
+Host *
+  UseKeychain yes
+  AddKeysToAgent yes
+
+Host gitlab.com
+  Hostname altssh.gitlab.com
+  User guillaumebriday
+  IdentityFile ~/.ssh/id_rsa,gitlab.com
+  Port 443
+
+Host github.com
+  Hostname ssh.github.com
+  User guillaumebriday
+  IdentityFile ~/.ssh/id_rsa,github.com
+  Port 443
