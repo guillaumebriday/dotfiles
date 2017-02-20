@@ -4,6 +4,15 @@ Mes fichiers de configuration pour mon système et mes outils de développement.
 
 ## Installation
 
+### Brew
+
+Installation d'outils et de logiciels via le package manager [https://brew.sh/](https://brew.sh/).
+
+```
+$ chmod +x brew/brew.sh # Make sure you can execute the file
+$ brew/brew.sh
+```
+
 ### git
 
 Placer les fichiers de configuration générale dans le home :
