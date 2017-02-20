@@ -20,3 +20,6 @@ bower_components
 
 # Logs
 *.log
+
+# Rspec
+spec/test_files/
