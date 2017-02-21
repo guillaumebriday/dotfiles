@@ -19,6 +19,7 @@ brew install ansible
 brew install composer
 brew install git
 brew install htop
+brew install mas
 brew install mysql
 brew install node
 brew install php70
@@ -32,6 +33,7 @@ brew install zsh
 # Get Cask
 brew tap caskroom/cask
 
+brew cask install appcleaner
 brew cask install docker
 brew cask install dropbox
 brew cask install firefox
@@ -44,6 +46,7 @@ brew cask install plex-media-player
 brew cask install sequel-pro
 brew cask install spotify
 brew cask install sublime-text
+brew cask install vagrant
 brew cask install virtualbox
 brew cask install vlc
 
