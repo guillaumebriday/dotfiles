@@ -87,6 +87,7 @@ alias zshconfig="nano ~/.zshrc"
 # Global aliases
 alias cl="clear"
 alias sites="cd ~/Sites"
+alias weather='curl -s "wttr.in/?lang=fr" | sed -n "1,7p"'
 
 # Git aliases
 alias gst="clear && git status"
