@@ -21,6 +21,12 @@ Placer les fichiers de configuration générale dans le home :
 $ cp -r git/. ~/.
 ```
 
+### vim
+
+```
+$ cp vim/.vimrc ~/
+```
+
 ### Sublime Text
 
 Pour la première installation, j'ai besoin d'installer le ```Package Control``` en suivant cette procédure : [https://packagecontrol.io/installation](https://packagecontrol.io/installation).
