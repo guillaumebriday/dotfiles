@@ -2,7 +2,7 @@
 	name = Guillaume Briday
 	email = guillaumebriday@gmail.com
 [core]
-	editor = nano
+	editor = vim
 	excludesfile = ~/.gitignore_global
 [pull]
 	rebase = true
