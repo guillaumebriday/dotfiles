@@ -16,6 +16,7 @@ brew upgrade
 brew install coreutils
 
 brew install ansible
+brew install chromedriver
 brew install composer
 brew install git
 brew install htop
@@ -27,6 +28,8 @@ brew install rbenv
 brew install screenfetch
 brew install tig
 brew install tree
+brew install watchman
+brew install yarn
 brew install youtube-dl
 brew install zsh
 
