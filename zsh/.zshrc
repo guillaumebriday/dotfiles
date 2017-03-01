@@ -95,6 +95,12 @@ alias gsu="clear && git status -u"
 alias gau="git add -u"
 alias gd.="git diff --color-words=."
 
+# Vagrant aliases
+alias vs="vagrant status"
+alias vgs="vagrant global-status"
+alias vu="vagrant up"
+alias vp="vagrant provision"
+
 # Spaceship config
 SPACESHIP_PROMPT_SEPARATE_LINE=false
 SPACESHIP_NVM_SHOW=false
