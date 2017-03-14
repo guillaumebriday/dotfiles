@@ -49,6 +49,7 @@ brew cask install plex-media-player
 brew cask install sequel-pro
 brew cask install spotify
 brew cask install sublime-text
+brew cask install synology-cloud-station-drive
 brew cask install vagrant
 brew cask install virtualbox
 brew cask install vlc
