@@ -49,6 +49,7 @@ Fichier ```.zshrc``` pour ma configuration zsh.
 ```
 $ cp spaceship.zsh-theme ~/.oh-my-zsh/themes/spaceship.zsh-theme
 $ cp zsh/.zshrc ~/.zshrc
+$ touch ~/.hushlogin
 ```
 
 ### BetterTouchTool
