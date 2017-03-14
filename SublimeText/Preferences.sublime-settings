@@ -19,11 +19,10 @@
 		"CVS",
 		".vagrant",
 		"log",
-		"vendor",
 		".sass-cache",
 		"tmp/cache"
 	],
-	"font_size": 18,
+	"font_size": 17,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
@@ -36,8 +35,8 @@
 		"draw_normal",
 		"draw_active"
 	],
-	"line_padding_bottom": 3,
-	"line_padding_top": 3,
+	"line_padding_bottom": 5,
+	"line_padding_top": 5,
 	"remember_full_screen": true,
 	"show_full_path": true,
 	"spacegray_fileicons": true,
