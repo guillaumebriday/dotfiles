@@ -5,8 +5,7 @@ export ZSH=~/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-# ZSH_THEME="robbyrussell"
-ZSH_THEME="spaceship"
+ZSH_THEME="robbyrussell"
 DEFAULT_USER="$USER"
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -100,15 +99,3 @@ alias vs="vagrant status"
 alias vgs="vagrant global-status"
 alias vu="vagrant up"
 alias vp="vagrant provision"
-
-# Spaceship config
-SPACESHIP_PROMPT_SEPARATE_LINE=false
-SPACESHIP_NVM_SHOW=false
-SPACESHIP_VI_MODE_SHOW=false
-SPACESHIP_PYENV_SHOW=false
-SPACESHIP_VENV_SHOW=false
-SPACESHIP_GOLANG_SHOW=false
-SPACESHIP_XCODE_SHOW_LOCAL=false
-SPACESHIP_SWIFT_SHOW_LOCAL=false
-SPACESHIP_RUBY_SHOW=false
-SPACESHIP_NVM_SHOW=false
