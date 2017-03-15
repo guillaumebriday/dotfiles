@@ -51,6 +51,15 @@ $ cp zsh/.zshrc ~/.zshrc
 $ touch ~/.hushlogin
 ```
 
+### iTerm2
+
+```
+$ chmod +x iTerm2/iterm.sh # Make sure you can execute the file
+$ iTerm2/iterm.sh
+```
+
+Une fois le thème téléchargé, vous pouvez l'utiliser depuis les préférences d'iTerm2.
+
 ### BetterTouchTool
 
 Export de la configuration de BetterTouchTool. Il suffit de l'importer via l'interface de BTT.
