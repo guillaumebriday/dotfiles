@@ -19,6 +19,7 @@ brew install ansible
 brew install chromedriver
 brew install composer
 brew install git
+brew install git-standup
 brew install htop
 brew install mas
 brew install mysql
