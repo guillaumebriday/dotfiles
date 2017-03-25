@@ -13,6 +13,15 @@ $ chmod +x brew/brew.sh # Make sure you can execute the file
 $ brew/brew.sh
 ```
 
+### masOS
+
+Avant de lancer la commande ```mas```, soyez sûr d'avoir installé l'utilitaire via ```brew``` comme indiqué au dessus.
+
+```
+$ chmod +x ./macOS/mas.sh # Make sure you can execute the file
+$ ./macOS/mas.sh
+```
+
 ### git
 
 Placer les fichiers de configuration générale dans le home :
