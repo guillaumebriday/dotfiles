@@ -99,3 +99,6 @@ alias vs="vagrant status"
 alias vgs="vagrant global-status"
 alias vu="vagrant up"
 alias vp="vagrant provision"
+
+# Artisan aliases
+alias artisan="php artisan"
