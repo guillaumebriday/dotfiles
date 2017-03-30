@@ -44,8 +44,8 @@ brew cask install firefox
 brew cask install google-chrome
 brew cask install iterm2
 brew cask install itsycal
-brew cask install keepassx
 brew cask install logitech-options
+brew cask install macpass
 brew cask install mamp
 brew cask install plex-media-player
 brew cask install sequel-pro
