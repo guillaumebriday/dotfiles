@@ -50,6 +50,7 @@ brew cask install mamp
 brew cask install plex-media-player
 brew cask install sequel-pro
 brew cask install spotify
+brew cask install sqlitebrowser
 brew cask install sublime-text
 brew cask install synology-cloud-station-drive
 brew cask install vagrant
