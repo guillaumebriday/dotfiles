@@ -55,6 +55,7 @@ brew cask install synology-cloud-station-drive
 brew cask install vagrant
 brew cask install virtualbox
 brew cask install vlc
+brew cask install vyprvpn
 
 # Quick Look plugins
 brew cask install qlcolorcode
