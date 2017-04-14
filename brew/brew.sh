@@ -53,6 +53,7 @@ brew cask install spotify
 brew cask install sqlitebrowser
 brew cask install sublime-text
 brew cask install synology-cloud-station-drive
+brew cask install synology-photo-station-uploader
 brew cask install vagrant
 brew cask install virtualbox
 brew cask install vlc
