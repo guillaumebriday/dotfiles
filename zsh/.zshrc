@@ -87,6 +87,7 @@ alias zshconfig="nano ~/.zshrc"
 alias cl="clear"
 alias sites="cd ~/Sites"
 alias weather='curl -s "wttr.in/?lang=fr" | sed -n "1,7p"'
+alias cask="brew cask"
 
 # Git aliases
 alias gst="clear && git status"
@@ -99,6 +100,7 @@ alias vs="vagrant status"
 alias vgs="vagrant global-status"
 alias vu="vagrant up"
 alias vp="vagrant provision"
+alias vh="vagrant halt"
 
 # Artisan aliases
 alias artisan="php artisan"
