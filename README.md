@@ -1,74 +1,96 @@
 # dotfiles
 
-Mes fichiers de configuration pour mon système et mes outils de développement.
+This is my dotfiles for my system customizations and to setup my development environment.
+
+## What's included ?
+
++ Homebrew
+  + Installs Homebrew AND brew install's all of my favourite packages
+  + Uses homebrew-cask to install all my applications
++ macOS
+  + Installs applications via the Mac App Store
++ Git
+  + Git config
+  + Global gitignore
++ Vim config
++ SSH config
++ Oh-My-Zsh
+  + Robbyrussell theme
+  + Aliases
++ Arthur iTerm2 colors theme
++ BetterTouchTool configuration
 
 ## Installation
 
 ### Brew
 
-Installation d'outils et de logiciels via le package manager [https://brew.sh/](https://brew.sh/).
+Packages and applications are installed with [https://brew.sh/](https://brew.sh/).
 
-```
+```bash
 $ chmod +x brew/brew.sh # Make sure you can execute the file
 $ brew/brew.sh
 ```
 
 ### masOS
 
-Avant de lancer la commande ```mas```, soyez sûr d'avoir installé l'utilitaire via ```brew``` comme indiqué au dessus.
+Before running the ```mas``` command, be sure to install ```brew``` with the last command.
 
-```
+```bash
 $ chmod +x ./macOS/mas.sh # Make sure you can execute the file
 $ ./macOS/mas.sh
 ```
 
-### git
+### Git
 
-Placer les fichiers de configuration générale dans le home :
+Nothing to install here, just move the content of the Git folder into your home :
 
-```
+```bash
 $ cp -r git/. ~/.
 ```
 
-### vim
+### Vim
 
-```
+Same here, just move the ``vimrc``` file into your home folder.
+
+```bash
 $ cp vim/.vimrc ~/
 ```
 
 ### Sublime Text
 
-Pour la première installation, j'ai besoin d'installer le ```Package Control``` en suivant cette procédure : [https://packagecontrol.io/installation](https://packagecontrol.io/installation).
+For the first installation, install the ```Package Control``` by following the instructions : [https://packagecontrol.io/installation](https://packagecontrol.io/installation).
 
-Ouvrez le dossier de vos packages depuis le menu ```Preferences > Browse Packages``` et placez le fichier ```Package Control.sublime-settings``` dans le dossier ```Packages/User``` pour installer les packages automatiquement.
-Une fois l'installation terminée, fermez Sublime Text et placez le fichier ```Preferences.sublime-settings``` au même endroit avec le fichier ```Default (OSX).sublime-keymap``` si vous êtes sur macOS.
+In Sublime Text, select  ```Preferences > Browse Packages``` and move the ```Package Control.sublime-settings``` file into the ```Packages/User``` folder to automatically install all the packages.
+When the install is done, close Sublime Text and move ```Preferences.sublime-settings``` in the same folder.
+
+if you run macOS, you can add ```Default (OSX).sublime-keymap``` too.
 
 ### SSH
 
-Fichier de configuration de base des clés ssh.
+Configuration file for ssh keys.
 
-```
+```bash
 $ cp ssh/config ~/.ssh/config
 ```
 
 ### ZSH
 
-Fichier ```.zshrc``` pour ma configuration zsh.
+Here too, just move the zsh config file to your home folder.
 
-```
+```bash
 $ cp zsh/.zshrc ~/.zshrc
-$ touch ~/.hushlogin
+$ touch ~/.hushlogin # If you want to hide the last login banner on logging
 ```
 
 ### iTerm2
 
-```
+```bash
 $ chmod +x iTerm2/iterm.sh # Make sure you can execute the file
 $ iTerm2/iterm.sh
 ```
 
-Une fois le thème téléchargé, vous pouvez l'utiliser depuis les préférences d'iTerm2.
+Once the theme is downloaded, you can modify your iTerm2 settings in the app.
 
 ### BetterTouchTool
 
-Export de la configuration de BetterTouchTool. Il suffit de l'importer via l'interface de BTT.
+It's just an export of my BTT configuration. To install, just import it into BTT.
