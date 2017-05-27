@@ -94,6 +94,7 @@ alias gst="clear && git status"
 alias gsu="clear && git status -u"
 alias gau="git add -u"
 alias gd.="git diff --color-words=."
+alias undo="git reset HEAD^"
 
 # Vagrant aliases
 alias vs="vagrant status"
