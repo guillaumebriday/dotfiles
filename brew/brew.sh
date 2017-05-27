@@ -30,7 +30,6 @@ brew install screenfetch
 brew install tig
 brew install tree
 brew install watchman
-brew install yarn
 brew install youtube-dl
 brew install zsh
 
