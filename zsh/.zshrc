@@ -105,3 +105,7 @@ alias vh="vagrant halt"
 
 # Artisan aliases
 alias artisan="php artisan"
+
+# Jekyll aliases
+alias js="jekyll serve"
+alias jbp="JEKYLL_ENV=production jekyll build"
