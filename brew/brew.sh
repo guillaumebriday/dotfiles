@@ -50,13 +50,13 @@ brew cask install plex-media-player
 brew cask install sequel-pro
 brew cask install spotify
 brew cask install sqlitebrowser
+brew cask install steam
 brew cask install sublime-text
 brew cask install synology-cloud-station-drive
-brew cask install synology-photo-station-uploader
 brew cask install vagrant
 brew cask install virtualbox
+brew cask install visual-studio-code
 brew cask install vlc
-brew cask install vyprvpn
 
 # Quick Look plugins
 brew cask install qlcolorcode
