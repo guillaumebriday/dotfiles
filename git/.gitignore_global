@@ -23,3 +23,6 @@ bower_components
 
 # Rspec
 spec/test_files/
+
+# Editors
+.vscode/
