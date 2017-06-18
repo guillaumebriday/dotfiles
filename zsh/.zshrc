@@ -107,5 +107,5 @@ alias vh="vagrant halt"
 alias artisan="php artisan"
 
 # Jekyll aliases
-alias js="jekyll serve"
+alias js="open http://127.0.0.1:4000/ && jekyll serve"
 alias jbp="JEKYLL_ENV=production jekyll build"
