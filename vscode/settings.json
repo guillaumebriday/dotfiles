@@ -1,6 +1,7 @@
 {
     "workbench.welcome.enabled": false,
     "workbench.colorTheme": "Base16 Ocean Dark",
+    "workbench.iconTheme": "material-icon-theme",
     "editor.fontSize": 15,
     "editor.renderWhitespace": "all",
     "editor.insertSpaces": true,
@@ -16,8 +17,9 @@
         "**/.svn": true,
         "**/.hg": true,
         "**/CVS": true,
-        "**/.DS_Store": true
+        "**/.DS_Store": true,
         "**/.vagrant": true,
-        "**/.vscode": true
-    },
+        "**/.vscode": true,
+        "**/.sass-cache": true
+    }
 }
