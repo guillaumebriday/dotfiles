@@ -95,6 +95,7 @@ alias gsu="clear && git status -u"
 alias gau="git add -u"
 alias gd.="git diff --color-words=."
 alias undo="git reset HEAD^"
+alias nah="git reset --hard HEAD && git clean -fd"
 
 # Vagrant aliases
 alias vs="vagrant status"
@@ -107,5 +108,5 @@ alias vh="vagrant halt"
 alias artisan="php artisan"
 
 # Jekyll aliases
-alias js="open http://127.0.0.1:4000/ && jekyll serve"
+alias js="jekyll serve --draft --config _config.yml,_config.dev.yml"
 alias jbp="JEKYLL_ENV=production jekyll build"
