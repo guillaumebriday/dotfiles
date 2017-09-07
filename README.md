@@ -56,15 +56,6 @@ Same here, just move the ``vimrc``` file into your home folder.
 $ cp vim/.vimrc ~/
 ```
 
-### Sublime Text
-
-For the first installation, install the ```Package Control``` by following the instructions : [https://packagecontrol.io/installation](https://packagecontrol.io/installation).
-
-In Sublime Text, select  ```Preferences > Browse Packages``` and move the ```Package Control.sublime-settings``` file into the ```Packages/User``` folder to automatically install all the packages.
-When the install is done, close Sublime Text and move ```Preferences.sublime-settings``` in the same folder.
-
-if you run macOS, you can add ```Default (OSX).sublime-keymap``` too.
-
 ### SSH
 
 Configuration file for ssh keys.
