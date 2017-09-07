@@ -19,12 +19,11 @@ brew install ansible
 brew install chromedriver
 brew install composer
 brew install git
-brew install git-standup
 brew install htop
 brew install mas
 brew install mysql
 brew install node
-brew install php70
+brew install php71
 brew install rbenv
 brew install screenfetch
 brew install tig
@@ -45,13 +44,12 @@ brew cask install iterm2
 brew cask install itsycal
 brew cask install logitech-options
 brew cask install macpass
-brew cask install mamp
 brew cask install plex-media-player
 brew cask install sequel-pro
+brew cask install shifty
 brew cask install spotify
 brew cask install sqlitebrowser
 brew cask install steam
-brew cask install sublime-text
 brew cask install synology-cloud-station-drive
 brew cask install vagrant
 brew cask install virtualbox
