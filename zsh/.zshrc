@@ -104,6 +104,9 @@ alias vu="vagrant up"
 alias vp="vagrant provision"
 alias vh="vagrant halt"
 
+# Docker aliases
+alias dc="docker-compose"
+
 # Artisan aliases
 alias artisan="php artisan"
 
