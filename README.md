@@ -19,6 +19,7 @@ This is my dotfiles for my system customizations and to setup my development env
   + Aliases
 + Arthur iTerm2 colors theme
 + BetterTouchTool configuration
++ VS Code configuration
 
 ## Installation
 
@@ -94,3 +95,12 @@ Once the theme is downloaded, you can modify your iTerm2 settings in the app.
 ### BetterTouchTool
 
 It's just an export of my BTT configuration. To install, just import it into BTT.
+
+### VS Code
+
+```package.list``` is just the list of my installed packages.
+
+To add my configuration :
+```bash
+$ cp -r vscode/. ~/Library/Application\ Support/Code/User/
+```

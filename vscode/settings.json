@@ -12,6 +12,7 @@
     "telemetry.enableCrashReporter": false,
     "window.zoomLevel": 0,
     "workbench.activityBar.visible": true,
+    "editor.autoIndent": true,
     "files.exclude": {
         "**/.git": true,
         "**/.svn": true,
@@ -21,5 +22,7 @@
         "**/.vagrant": true,
         "**/.vscode": true,
         "**/.sass-cache": true
-    }
+    },
+    "extensions.ignoreRecommendations": true,
+    "material-icon-theme.showUpdateMessage": false
 }
