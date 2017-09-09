@@ -40,6 +40,15 @@ $ chmod +x ./macOS/mas.sh # Make sure you can execute the file
 $ ./macOS/mas.sh
 ```
 
+#### Sensible macOS defaults
+
+When setting up a new Mac, you may want to set some sensible macOS defaults.
+
+```bash
+$ chmod +x ./macOS/.macos # Make sure you can execute the file
+$ ./macOS/.macos
+```
+
 ### Git
 
 Nothing to install here, just move the content of the Git folder into your home :
