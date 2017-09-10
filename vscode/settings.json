@@ -24,5 +24,9 @@
         "**/.sass-cache": true
     },
     "extensions.ignoreRecommendations": true,
-    "material-icon-theme.showUpdateMessage": false
+    "material-icon-theme.showUpdateMessage": false,
+    "emmet.includeLanguages": {
+        "blade": "html"
+    },
+    "emmet.triggerExpansionOnTab": true
 }
