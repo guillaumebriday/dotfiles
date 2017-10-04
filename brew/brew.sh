@@ -17,6 +17,7 @@ brew install coreutils
 
 brew install ansible
 brew install chromedriver
+brew install ccat
 brew install composer
 brew install git
 brew install htop
