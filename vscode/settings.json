@@ -13,6 +13,8 @@
     "window.zoomLevel": 0,
     "workbench.activityBar.visible": true,
     "editor.autoIndent": true,
+    "explorer.openEditors.visible": 0,
+    "docker.showExplorer": false,
     "files.exclude": {
         "**/.git": true,
         "**/.svn": true,
