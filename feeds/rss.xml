@@ -100,10 +100,6 @@
             <outline title="Mégaflux RSS (MacGeneration + iGeneration)" xmlUrl="http://megaflux.macg.co" type="rss" text="Mégaflux RSS (MacGeneration + iGeneration)"/>
             <outline title="Numerama" xmlUrl="http://www.numerama.com/feed/rss/" type="rss" text="Numerama"/>
         </outline>
-        <outline title="Photo">
-            <outline title="Minimal Desks - Simple workspaces, interior design" xmlUrl="http://minimaldesks.com/rss" type="rss" text="Minimal Desks - Simple workspaces, interior design"/>
-            <outline title="Unsplash" xmlUrl="http://unsplash.com/rss" type="rss" text="Unsplash"/>
-        </outline>
         <outline title="Voyages">
             <outline title="Abe Kislevitz" xmlUrl="http://abekislevitz.com/feed/" type="rss" text="Abe Kislevitz"/>
             <outline title="DJISUPERTRAMP" xmlUrl="http://djisupertramp.com/feed/" type="rss" text="DJISUPERTRAMP"/>
