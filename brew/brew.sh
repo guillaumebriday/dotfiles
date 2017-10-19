@@ -17,10 +17,10 @@ brew install coreutils
 
 brew install ansible
 brew install chromedriver
-brew install ccat
 brew install composer
 brew install git
 brew install htop
+brew install httpie
 brew install mas
 brew install mysql
 brew install node
@@ -28,9 +28,6 @@ brew install php71
 brew install rbenv
 brew install screenfetch
 brew install tig
-brew install tree
-brew install watchman
-brew install youtube-dl
 brew install zsh
 
 # Get Cask
@@ -49,7 +46,6 @@ brew cask install plex-media-player
 brew cask install sequel-pro
 brew cask install shifty
 brew cask install spotify
-brew cask install sqlitebrowser
 brew cask install steam
 brew cask install synology-cloud-station-drive
 brew cask install vagrant
