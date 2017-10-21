@@ -16,6 +16,7 @@
     "explorer.openEditors.visible": 0,
     "docker.showExplorer": false,
     "workbench.fontAliasing": "antialiased",
+    "explorer.sortOrder": "type",
     "files.exclude": {
         "**/.git": true,
         "**/.svn": true,
