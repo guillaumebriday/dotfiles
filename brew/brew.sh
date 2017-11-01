@@ -45,7 +45,6 @@ brew cask install macpass
 brew cask install plex-media-player
 brew cask install sequel-pro
 brew cask install shifty
-brew cask install spotify
 brew cask install steam
 brew cask install synology-cloud-station-drive
 brew cask install vagrant
