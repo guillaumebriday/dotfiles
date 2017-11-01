@@ -16,6 +16,5 @@ mas install 409201541  # Pages
 mas install 803453959  # Slack
 mas install 747648890  # Telegram
 mas install 425424353  # The Unarchiver
-mas install 1278508951 # Trello
 mas install 557168941  # Tweetbot
 mas install 497799835  # Xcode
