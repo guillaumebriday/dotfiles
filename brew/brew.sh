@@ -55,10 +55,10 @@ brew cask install vlc
 
 # Quick Look plugins
 brew cask install qlcolorcode
-brew cask install qlstephen
 brew cask install qlmarkdown
-brew cask install quicklook-json
+brew cask install qlstephen
 brew cask install quicklook-csv
+brew cask install quicklook-json
 
 # Remove outdated versions from the cellar.
 brew cleanup
