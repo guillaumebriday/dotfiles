@@ -19,6 +19,7 @@ brew install ansible
 brew install chromedriver
 brew install composer
 brew install git
+brew install guetzli
 brew install htop
 brew install httpie
 brew install mas
