@@ -44,6 +44,7 @@ brew cask install itsycal
 brew cask install logitech-options
 brew cask install macpass
 brew cask install plex-media-player
+brew cask install rambox
 brew cask install sequel-pro
 brew cask install shifty
 brew cask install steam
