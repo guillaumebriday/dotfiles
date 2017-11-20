@@ -18,6 +18,7 @@
     "projectManager.treeview.visible": false,
     "workbench.fontAliasing": "antialiased",
     "explorer.sortOrder": "type",
+    "editor.tabSize": 2,
     "files.exclude": {
         "**/.git": true,
         "**/.svn": true,
@@ -33,5 +34,10 @@
     "emmet.includeLanguages": {
         "blade": "html"
     },
-    "emmet.triggerExpansionOnTab": true
+    "files.associations": {
+        ".php_cs": "php",
+        ".php_cs.dist": "php"
+    },
+    "emmet.triggerExpansionOnTab": true,
+    "explorer.confirmDelete": false
 }
