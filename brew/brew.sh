@@ -30,6 +30,7 @@ brew install rbenv
 brew install screenfetch
 brew install tig
 brew install zsh
+brew install zsh-syntax-highlighting
 
 # Get Cask
 brew tap caskroom/cask
