@@ -3,12 +3,13 @@ export ZSH=~/.oh-my-zsh
 ZSH_THEME="robbyrussell"
 DEFAULT_USER="$USER"
 
-plugins=(git rails bundler)
+plugins=(git rails bundler laravel5 osx docker)
 
 # User configuration
 
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
 
 source $ZSH/oh-my-zsh.sh
 
