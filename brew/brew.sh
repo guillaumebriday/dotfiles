@@ -36,18 +36,20 @@ brew install zsh-syntax-highlighting
 brew tap caskroom/cask
 
 brew cask install appcleaner
+brew cask install bettertouchtool
+brew cask install discord
 brew cask install docker
 brew cask install dropbox
 brew cask install firefox
 brew cask install google-chrome
+brew cask install insomnia
 brew cask install iterm2
 brew cask install itsycal
 brew cask install logitech-options
-brew cask install macpass
 brew cask install plex-media-player
 brew cask install rambox
 brew cask install sequel-pro
-brew cask install shifty
+brew cask install spotify
 brew cask install steam
 brew cask install synology-cloud-station-drive
 brew cask install vagrant
