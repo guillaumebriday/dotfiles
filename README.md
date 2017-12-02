@@ -2,6 +2,8 @@
 
 This is my dotfiles for my system customizations and to setup my development environment.
 
+![Screenshot](https://raw.githubusercontent.com/guillaumebriday/dotfiles/master/screenshot.png)
+
 ## What's included ?
 
 + Homebrew
