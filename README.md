@@ -100,7 +100,11 @@ It's just an export of my BTT configuration. To install, just import it into BTT
 
 ### VS Code
 
-```package.list``` is just the list of my installed packages.
+Install extensions :
+```bash
+$ chmod +x ./vscode/package.sh # Make sure you can execute the file
+$ ./vscode/package.sh
+```
 
 To add my configuration :
 ```bash
