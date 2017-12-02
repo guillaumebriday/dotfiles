@@ -39,5 +39,6 @@
         ".php_cs.dist": "php"
     },
     "emmet.triggerExpansionOnTab": true,
-    "explorer.confirmDelete": false
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false
 }
