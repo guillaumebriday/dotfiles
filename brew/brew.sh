@@ -25,7 +25,7 @@ brew install httpie
 brew install mas
 brew install mysql
 brew install node
-brew install php71
+brew install php72
 brew install rbenv
 brew install screenfetch
 brew install tig
