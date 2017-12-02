@@ -43,11 +43,13 @@
             <outline title="Eric L. Barnes" xmlUrl="http://ericlbarnes.com/rss" type="rss" text="Eric L. Barnes"/>
             <outline title="Antoine Guilbert" xmlUrl="http://feeds.feedburner.com/antoineguilbert" type="rss" text="Antoine Guilbert"/>
             <outline title="thibaudd" xmlUrl="http://feeds.uri.lv/thibaudd" type="rss" text="thibaudd"/>
+            <outline title="Hello Adventures ! » Flux" xmlUrl="http://helloadventures.fr/feed/" type="rss" text="Hello Adventures ! » Flux"/>
             <outline title="Léo Duff" xmlUrl="http://leoduff.fr/feed/" type="rss" text="Léo Duff"/>
             <outline title="LoKan.fr" xmlUrl="http://lokan.jp/feed/" type="rss" text="LoKan.fr"/>
             <outline title="Matt Moak" xmlUrl="http://mattmoak.com/feed/" type="rss" text="Matt Moak"/>
             <outline title="Blonde Ambition" xmlUrl="http://stylewithblondeambition.blogspot.com/feeds/posts/default?alt=rss" type="rss" text="Blonde Ambition"/>
             <outline title="theosntvn.fr" xmlUrl="http://theosntvn.fr/feed/" type="rss" text="theosntvn.fr"/>
+            <outline title="Blog RSS Feed" xmlUrl="http://tobiasahlin.com/feed.xml" type="rss" text="Blog RSS Feed"/>
             <outline title="Blabla High" xmlUrl="http://www.blablahightech.fr/feed" type="rss" text="Blabla High"/>
             <outline title="Geeek - Le blog d'un Geek" xmlUrl="http://www.geeek.org/feed/rss2" type="rss" text="Geeek - Le blog d'un Geek"/>
             <outline title="Guillaume Vendé » Flux" xmlUrl="http://www.guillaumevende.me/feed/" type="rss" text="Guillaume Vendé » Flux"/>
@@ -56,6 +58,7 @@
             <outline title="Pingoo" xmlUrl="http://www.pingoo.com/feed/" type="rss" text="Pingoo"/>
             <outline title="thibaudd" xmlUrl="http://www.thibaudd.be/feed/atom/" type="rss" text="thibaudd"/>
             <outline title="9to5Mac" xmlUrl="https://9to5mac.com/feed/" type="rss" text="9to5Mac"/>
+            <outline title="Pascal MARTIN activity feed" xmlUrl="https://blog.pascal-martin.fr/feed/rss2.xml" type="rss" text="Pascal MARTIN activity feed"/>
             <outline title="Blogue de Geek" xmlUrl="https://bloguedegeek.net/feed" type="rss" text="Blogue de Geek"/>
             <outline title="Daring Fireball" xmlUrl="https://daringfireball.net/feeds/main" type="rss" text="Daring Fireball"/>
             <outline title="Doclot IO » Flux" xmlUrl="https://doclot.io/feed/" type="rss" text="Doclot IO » Flux"/>
@@ -102,11 +105,13 @@
             <outline title="24 jours de web" xmlUrl="http://www.24joursdeweb.fr/feed/" type="rss" text="24 jours de web"/>
             <outline title="The Vanilla Javascript Repository" xmlUrl="http://www.vanillalist.com/home/rss" type="rss" text="The Vanilla Javascript Repository"/>
             <outline title="Mohamed Said - themsaid" xmlUrl="http:/themsaid.github.io/feed.rss" type="rss" text="Mohamed Said - themsaid"/>
+            <outline title="Brian Wells" xmlUrl="https://blog.untoldvoyage.com/rss/" type="rss" text="Brian Wells"/>
             <outline title="Michael Dyrynda | Laravel, PHP, DevOps" xmlUrl="https://dyrynda.com.au/blog/feed" type="rss" text="Michael Dyrynda | Laravel, PHP, DevOps"/>
             <outline title="Laravel News » Feed" xmlUrl="https://feed.laravel-news.com/" type="rss" text="Laravel News » Feed"/>
             <outline title="RSS Feed for jenssegers.com" xmlUrl="https://jenssegers.com/rss" type="rss" text="RSS Feed for jenssegers.com"/>
             <outline title="Laravel Announcements - Medium" xmlUrl="https://medium.com/feed/laravel-announcements" type="rss" text="Laravel Announcements - Medium"/>
             <outline title="murze.be » Feed" xmlUrl="https://murze.be/feed/" type="rss" text="murze.be » Feed"/>
+            <outline title="Ruby Weekly" xmlUrl="https://rubyweekly.com/rss/22dp9if0" type="rss" text="Ruby Weekly"/>
         </outline>
         <outline title="NAS">
             <outline title="Cachem » Flux" xmlUrl="https://www.cachem.fr/feed/" type="rss" text="Cachem » Flux"/>
