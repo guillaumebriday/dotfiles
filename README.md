@@ -62,7 +62,7 @@ $ cp -r git/. ~/.
 
 ### Vim
 
-Same here, just move the ``vimrc``` file into your home folder.
+Same here, just move the ```vimrc``` file into your home folder.
 
 ```bash
 $ cp vim/.vimrc ~/
