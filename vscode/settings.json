@@ -55,8 +55,11 @@
         "**/vendor/[abcdefghijkmnopqrstuvwxyz]*": true,
         "**/vendor/l[bcdefghijklmnopqrstuvwxyz]*": true,
 
-        "storage/framework/views": true
+        "storage/framework/views": true,
+        "storage/debugbar": true,
+        "composer.lock": true
     },
     "gitlens.codeLens.authors.enabled": false,
-    "gitlens.codeLens.recentChange.enabled": false
+    "gitlens.codeLens.recentChange.enabled": false,
+    "gitlens.gitExplorer.enabled": false,
 }
