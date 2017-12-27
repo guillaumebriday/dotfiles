@@ -4,6 +4,8 @@
 [core]
 	editor = vim
 	excludesfile = ~/.gitignore_global
+	autocrlf = input
+	mergeoptions = --no-edit
 [pull]
 	rebase = true
 [merge]
