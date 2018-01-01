@@ -37,7 +37,8 @@
     },
     "files.associations": {
         ".php_cs": "php",
-        ".php_cs.dist": "php"
+        ".php_cs.dist": "php",
+        "*.scss": "sass"
     },
     "emmet.triggerExpansionOnTab": true,
     "explorer.confirmDelete": false,
