@@ -5,8 +5,9 @@ code --install-extension PKief.material-icon-theme
 code --install-extension PeterJausovec.vscode-docker
 code --install-extension Tyriar.sort-lines
 code --install-extension alefragnani.project-manager
+code --install-extension bmewburn.vscode-intelephense-client
+code --install-extension dbaeumer.vscode-eslint
 code --install-extension eamodio.gitlens
-code --install-extension felixfbecker.php-intellisense
 code --install-extension ginfuru.ginfuru-vscode-jekyll-syntax
 code --install-extension ginfuru.vscode-jekyll-snippets
 code --install-extension marcostazi.VS-code-vagrantfile
