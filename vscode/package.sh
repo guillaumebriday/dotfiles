@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+code --install-extension CoenraadS.bracket-pair-colorizer
 code --install-extension CraigMaslowski.erb
 code --install-extension PKief.material-icon-theme
 code --install-extension PeterJausovec.vscode-docker
