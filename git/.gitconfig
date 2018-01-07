@@ -5,7 +5,7 @@
 	editor = vim
 	excludesfile = ~/.gitignore_global
 	autocrlf = input
-	mergeoptions = --no-edit
+	pager = diff-so-fancy | less --tabs=4 -RFX
 [pull]
 	rebase = true
 [merge]
