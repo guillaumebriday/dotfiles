@@ -4,6 +4,7 @@ mas signin mas@example.com # Change with your email
 
 mas upgrade
 
+mas install 1133028347 # DrCleaner
 mas install 408981434  # iMovie
 mas install 409183694  # Keynote
 mas install 409201541  # Pages
