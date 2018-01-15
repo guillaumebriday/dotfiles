@@ -13,13 +13,13 @@ brew update
 # Upgrade any already-installed formulae.
 brew upgrade
 
-brew install coreutils
-
 brew install ansible
 brew install chromedriver
 brew install composer
+brew install coreutils
 brew install git
 brew install git-extras
+brew install git-open
 brew install guetzli
 brew install htop
 brew install httpie
@@ -27,7 +27,7 @@ brew install mas
 brew install mysql
 brew install node
 brew install php72
-brew install rbenv
+brew install postgresql
 brew install screenfetch
 brew install tig
 brew install zsh
@@ -36,7 +36,6 @@ brew install zsh-syntax-highlighting
 # Get Cask
 brew tap caskroom/cask
 
-brew cask install appcleaner
 brew cask install bettertouchtool
 brew cask install discord
 brew cask install docker
