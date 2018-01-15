@@ -18,7 +18,6 @@ brew install coreutils
 brew install ansible
 brew install chromedriver
 brew install composer
-brew install diff-so-fancy
 brew install git
 brew install git-extras
 brew install guetzli
