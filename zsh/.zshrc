@@ -25,7 +25,7 @@ alias gd.="git diff --color-words=."
 alias gst="clear && git status"
 alias gsu="clear && git status -u"
 alias nah="git reset --hard HEAD && git clean -fd"
-alias undo="git reset HEAD^"
+alias undo="git reset HEAD\^"
 alias wip="git add . && git commit -m WIP"
 
 # Vagrant aliases
