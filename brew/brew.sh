@@ -31,6 +31,7 @@ brew install postgresql
 brew install screenfetch
 brew install tig
 brew install zsh
+brew install zsh-autosuggestions
 brew install zsh-syntax-highlighting
 
 # Get Cask

@@ -49,5 +49,8 @@ alias artisan="php artisan"
 alias jbp="JEKYLL_ENV=production jekyll build"
 alias js="jekyll serve --draft --config _config.yml,_config.dev.yml"
 
+# Source zsh-autosuggestions
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
 # Source zsh-syntax-highlighting
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
