@@ -5,6 +5,9 @@
 .php_cs.cache
 vendor/
 
+# Ruby
+.byebug_history
+
 # Node
 node_modules/
 bower_components
