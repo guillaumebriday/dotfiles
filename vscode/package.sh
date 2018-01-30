@@ -12,6 +12,7 @@ code --install-extension ginfuru.vscode-jekyll-snippets
 code --install-extension hollowtree.vue-snippets
 code --install-extension marcostazi.VS-code-vagrantfile
 code --install-extension miguel-savignano.ruby-symbols
+code --install-extension mrmlnc.vscode-apache
 code --install-extension neilbrayfield.php-docblocker
 code --install-extension neilding.language-liquid
 code --install-extension octref.vetur
