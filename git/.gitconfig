@@ -11,3 +11,5 @@
 	ff = false
 [color]
 	ui = true
+[pager]
+	branch = false
