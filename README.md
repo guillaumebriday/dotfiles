@@ -9,6 +9,7 @@ This is my dotfiles for my system customizations and to setup my development env
 + Homebrew
   + Installs Homebrew AND brew install's all of my favourite packages
   + Uses homebrew-cask to install all my applications
++ RVM
 + macOS
   + Installs applications via the Mac App Store
 + Git
@@ -32,6 +33,15 @@ Packages and applications are installed with [https://brew.sh/](https://brew.sh/
 ```bash
 $ chmod +x brew/brew.sh # Make sure you can execute the file
 $ brew/brew.sh
+```
+
+### RVM
+
+Ruby is manage with [https://rvm.io](https://rvm.io).
+
+```bash
+$ chmod +x ruby/rvm.sh # Make sure you can execute the file
+$ ruby/rvm.sh
 ```
 
 ### masOS
