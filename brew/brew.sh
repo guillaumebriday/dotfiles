@@ -36,6 +36,7 @@ brew install zsh-syntax-highlighting
 
 # Get Cask
 brew tap caskroom/cask
+brew tap caskroom/drivers
 
 brew cask install bettertouchtool
 brew cask install discord
@@ -52,7 +53,7 @@ brew cask install rambox
 brew cask install sequel-pro
 brew cask install spotify
 brew cask install steam
-brew cask install synology-cloud-station-drive
+brew cask install synology-drive
 brew cask install vagrant
 brew cask install virtualbox
 brew cask install visual-studio-code
