@@ -9,6 +9,9 @@ plugins=(git rails bundler laravel5 osx docker)
 
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
+
 source $ZSH/oh-my-zsh.sh
 
 alias zshconfig="vim ~/.zshrc"
@@ -42,10 +45,6 @@ alias yt="docker run --rm -u $(id -u):$(id -g) -v $PWD:/data vimagick/youtube-dl
 
 # Artisan aliases
 alias artisan="php artisan"
-
-# Jekyll aliases
-alias jbp="JEKYLL_ENV=production jekyll build"
-alias js="jekyll serve --draft --config _config.yml,_config.dev.yml"
 
 # Source zsh-autosuggestions
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
