@@ -10,15 +10,15 @@
     "files.insertFinalNewline": true,
     "telemetry.enableTelemetry": false,
     "telemetry.enableCrashReporter": false,
-    "window.zoomLevel": 0,
     "workbench.activityBar.visible": true,
     "editor.autoIndent": true,
     "explorer.openEditors.visible": 0,
     "docker.showExplorer": false,
     "projectManager.treeview.visible": false,
-    "workbench.fontAliasing": "antialiased",
+    "workbench.fontAliasing": "auto",
     "explorer.sortOrder": "type",
     "editor.tabSize": 2,
+    "terminal.integrated.copyOnSelection": true,
     "files.exclude": {
         "**/.git": true,
         "**/.svn": true,
@@ -48,19 +48,15 @@
         "**/node_modules": true,
         "**/bower_components": true,
 
-        // Hide everything in /public, except "index.php"
-        "**/public/[abcdefghjklmnopqrstuvwxyz]*": true,
-        "**/public/i[abcdefghijklmopqrstuvwxyz]*": true,
-
-        // Hide everything in /vendor, except "laravel" folder.
-        "**/vendor/[abcdefghijkmnopqrstuvwxyz]*": true,
-        "**/vendor/l[bcdefghijklmnopqrstuvwxyz]*": true,
+        "**/css": true,
+        "**/js": true,
 
         "storage/framework/views": true,
         "storage/debugbar": true,
-        "composer.lock": true
+        "composer.lock": true,
+        "package-lock.lock": true
     },
     "gitlens.codeLens.authors.enabled": false,
     "gitlens.codeLens.recentChange.enabled": false,
-    "gitlens.gitExplorer.enabled": false,
+    "gitlens.gitExplorer.enabled": false
 }
