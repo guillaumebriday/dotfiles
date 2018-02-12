@@ -1,9 +1,12 @@
 #!/usr/bin/env bash
 
-code --install-extension alefragnani.project-manager
-code --install-extension bmewburn.vscode-intelephense-client
 code --install-extension CoenraadS.bracket-pair-colorizer
 code --install-extension CraigMaslowski.erb
+code --install-extension PKief.material-icon-theme
+code --install-extension PeterJausovec.vscode-docker
+code --install-extension Tyriar.sort-lines
+code --install-extension alefragnani.project-manager
+code --install-extension bmewburn.vscode-intelephense-client
 code --install-extension dbaeumer.vscode-eslint
 code --install-extension eamodio.gitlens
 code --install-extension formulahendry.auto-rename-tag
@@ -18,13 +21,11 @@ code --install-extension neilding.language-liquid
 code --install-extension octref.vetur
 code --install-extension onecentlin.laravel-blade
 code --install-extension patbenatar.advanced-new-file
-code --install-extension PeterJausovec.vscode-docker
-code --install-extension PKief.material-icon-theme
-code --install-extension rebornix.ruby
+code --install-extension rebornix.Ruby
 code --install-extension robinbentley.sass-indented
 code --install-extension shanoor.vscode-nginx
 code --install-extension sianglim.slim
-code --install-extension Tyriar.sort-lines
 code --install-extension viatsko.theme-base16-ocean-dark
+code --install-extension wayou.vscode-todo-highlight
 code --install-extension whatwedo.twig
-code --install-extension Zignd.html-css-class-completion
+code --install-extension wmaurer.change-case
