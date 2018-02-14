@@ -1,31 +1,36 @@
-# Databases
+## Databases
 *.sql
+db/*.sqlite3
 
-# Php
+## Environment normalization:
+/.bundle
+
+## Php
 .php_cs.cache
 vendor/
 
-# Ruby
+## Ruby
 .byebug_history
 
-# Node
+## Node
 node_modules/
-bower_components
+bower_components/
+.sass-cache
 
-# Ansible
+## Ansible
 *.retry
 
-# Vagrant
+## Vagrant
 .vagrant/
 
-# macOS
+## macOS
 *.DS_Store
 
-# Logs
+## Logs
 *.log
 
-# Rspec
+## Rspec
 spec/test_files/
 
-# Editors
+## Editors
 .vscode/
