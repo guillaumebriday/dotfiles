@@ -21,6 +21,7 @@ code --install-extension neilding.language-liquid
 code --install-extension octref.vetur
 code --install-extension onecentlin.laravel-blade
 code --install-extension patbenatar.advanced-new-file
+code --install-extension pnp.polacode
 code --install-extension rebornix.Ruby
 code --install-extension robinbentley.sass-indented
 code --install-extension shanoor.vscode-nginx
