@@ -30,6 +30,7 @@ alias gsu="clear && git status -u"
 alias nah="git reset --hard HEAD && git clean -fd"
 alias undo="git reset HEAD\^"
 alias wip="git add . && git commit -m WIP"
+alias go="git open"
 
 # Vagrant aliases
 alias vd="vagrant destroy"
