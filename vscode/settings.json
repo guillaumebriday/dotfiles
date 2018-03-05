@@ -65,5 +65,6 @@
     },
     "gitlens.codeLens.authors.enabled": false,
     "gitlens.codeLens.recentChange.enabled": false,
-    "gitlens.gitExplorer.enabled": false
+    "gitlens.gitExplorer.enabled": false,
+    "workbench.sideBar.location": "right"
 }
