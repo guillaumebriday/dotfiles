@@ -41,6 +41,7 @@ alias vs="vagrant status"
 alias vu="vagrant up"
 
 # Docker aliases
+alias dps="docker ps"
 alias dc="docker-compose"
 alias yt="docker run --rm -u $(id -u):$(id -g) -v $PWD:/data vimagick/youtube-dl"
 
