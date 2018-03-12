@@ -17,19 +17,22 @@ brew install ansible
 brew install chromedriver
 brew install composer
 brew install coreutils
+brew install ffmpeg
 brew install git
 brew install git-extras
 brew install git-open
+brew install gitlab-runner
 brew install guetzli
 brew install htop
 brew install httpie
 brew install mas
 brew install mysql
 brew install node
-brew install php72
+brew install php
 brew install postgresql
 brew install screenfetch
 brew install tig
+brew install yarn
 brew install zsh
 brew install zsh-autosuggestions
 brew install zsh-syntax-highlighting
@@ -42,6 +45,7 @@ brew cask install bettertouchtool
 brew cask install discord
 brew cask install docker
 brew cask install dropbox
+brew cask install filezilla
 brew cask install firefox
 brew cask install google-chrome
 brew cask install insomnia
