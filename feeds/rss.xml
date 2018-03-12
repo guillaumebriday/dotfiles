@@ -70,10 +70,13 @@
             <outline title="Carnet de notes » Flux" xmlUrl="https://n.survol.fr/feed" type="rss" text="Carnet de notes » Flux"/>
             <outline title="nvbn blog" xmlUrl="https://nvbn.github.io/feed.xml" type="rss" text="nvbn blog"/>
             <outline title="Santadenn » Flux" xmlUrl="https://santadenn.com/feed/" type="rss" text="Santadenn » Flux"/>
+            <outline title="The Sweet Setup" xmlUrl="https://thesweetsetup.com/feed/" type="rss" text="The Sweet Setup"/>
             <outline title="wheretochill.fr" xmlUrl="https://wheretochill.fr/feed/" type="rss" text="wheretochill.fr"/>
             <outline title="BrianChristner.io" xmlUrl="https://www.brianchristner.io/rss/" type="rss" text="BrianChristner.io"/>
+            <outline title="Je deviens ecolo » Flux" xmlUrl="https://www.jedeviensecolo.fr/feed/" type="rss" text="Je deviens ecolo » Flux"/>
             <outline title="Je ne sais pas choisir » Flux" xmlUrl="https://www.jenesaispaschoisir.com/feed/" type="rss" text="Je ne sais pas choisir » Flux"/>
             <outline title="Pierre Morsa" xmlUrl="https://www.pierremorsa.com/index.xml" type="rss" text="Pierre Morsa"/>
+            <outline title="YouTips » Flux" xmlUrl="https://www.youtips.com/feed/" type="rss" text="YouTips » Flux"/>
         </outline>
         <outline title="Companies">
             <outline title="Android" xmlUrl="http://officialandroid.blogspot.com/feeds/posts/default" type="rss" text="Android"/>
@@ -146,6 +149,7 @@
             <outline title="Santadenn" xmlUrl="http://www.santadenn.com/feed/" type="rss" text="Santadenn"/>
             <outline title="Lately Traveled’s Posts on Exposure" xmlUrl="https://latelytraveled.exposure.co/feed.rss" type="rss" text="Lately Traveled’s Posts on Exposure"/>
             <outline title="Carnets de traverse" xmlUrl="https://www.carnets-de-traverse.com" type="rss" text="Carnets de traverse"/>
+            <outline title="✖ Carnets de traverse » Les articles Flux des commentaires" xmlUrl="https://www.carnets-de-traverse.com/blog/articles/feed" type="rss" text="✖ Carnets de traverse » Les articles Flux des commentaires"/>
         </outline>
     </body>
 </opml>
