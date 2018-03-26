@@ -5,7 +5,9 @@ mas signin mas@example.com # Change with your email
 mas upgrade
 
 mas install 1133028347 # DrCleaner
+mas install 1294126402 # HEIC Converter (1.1.0)
 mas install 1319778037 # iStat Menus
+mas install 1351639930 # Gifski (1.2.0)
 mas install 408981434  # iMovie
 mas install 409183694  # Keynote
 mas install 409201541  # Pages

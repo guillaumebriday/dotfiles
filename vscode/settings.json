@@ -66,5 +66,6 @@
     "gitlens.codeLens.authors.enabled": false,
     "gitlens.codeLens.recentChange.enabled": false,
     "gitlens.gitExplorer.enabled": false,
+    "files.autoSave": "onWindowChange",
     "workbench.sideBar.location": "right"
 }
