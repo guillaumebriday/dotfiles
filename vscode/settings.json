@@ -38,7 +38,9 @@
     "files.associations": {
         ".php_cs": "php",
         ".php_cs.dist": "php",
-        "*.scss": "sass"
+        "*.scss": "sass",
+        "*.yml.j2": "yaml",
+        "*.toml.j2": "toml"
     },
     "emmet.triggerExpansionOnTab": true,
     "explorer.confirmDelete": false,
