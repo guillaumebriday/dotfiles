@@ -7,6 +7,7 @@ code --install-extension PeterJausovec.vscode-docker
 code --install-extension Tyriar.sort-lines
 code --install-extension alefragnani.project-manager
 code --install-extension bmewburn.vscode-intelephense-client
+code --install-extension bungcip.better-toml
 code --install-extension dbaeumer.vscode-eslint
 code --install-extension eamodio.gitlens
 code --install-extension formulahendry.auto-rename-tag
