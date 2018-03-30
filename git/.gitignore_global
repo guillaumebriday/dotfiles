@@ -19,6 +19,7 @@ bower_components/
 
 ## Ansible
 *.retry
+hosts
 
 ## Vagrant
 .vagrant/
