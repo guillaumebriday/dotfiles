@@ -24,7 +24,6 @@ brew install git-open
 brew install gitlab-runner
 brew install guetzli
 brew install htop
-brew install httpie
 brew install mas
 brew install mysql
 brew install node
