@@ -26,7 +26,6 @@
         "**/CVS": true,
         "**/.DS_Store": true,
         "**/.vagrant": true,
-        "**/.vscode": true,
         "**/.sass-cache": true
     },
     "extensions.ignoreRecommendations": true,
@@ -52,6 +51,9 @@
 
         "**/css": true,
         "**/js": true,
+
+        "**/public/packs": true,
+        "**/public/packs-test": true,
 
         "storage/framework/views": true,
         "storage/debugbar": true,
