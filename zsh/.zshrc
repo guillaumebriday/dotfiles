@@ -5,6 +5,11 @@ DEFAULT_USER="$USER"
 
 plugins=(git rails bundler laravel5 osx docker)
 
+if brew command command-not-found-init > /dev/null 2>&1;
+then
+  eval "$(brew command-not-found-init)"
+fi
+
 # User configuration
 
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"

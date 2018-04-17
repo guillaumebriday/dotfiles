@@ -38,6 +38,7 @@ brew install zsh-syntax-highlighting
 
 # Get Cask
 brew tap caskroom/cask
+brew tap homebrew/command-not-found
 brew tap caskroom/drivers
 
 brew cask install bettertouchtool
