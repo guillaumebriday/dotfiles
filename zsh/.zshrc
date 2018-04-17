@@ -1,4 +1,5 @@
 export ZSH=~/.oh-my-zsh
+export LANG="en_US.UTF-8"
 
 ZSH_THEME="robbyrussell"
 DEFAULT_USER="$USER"
