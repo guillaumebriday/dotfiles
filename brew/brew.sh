@@ -31,6 +31,7 @@ brew install php
 brew install postgresql
 brew install screenfetch
 brew install tig
+brew install vim
 brew install yarn
 brew install zsh
 brew install zsh-autosuggestions
