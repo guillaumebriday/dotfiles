@@ -14,6 +14,7 @@ brew update
 brew upgrade
 
 brew install ansible
+brew install ccat
 brew install chromedriver
 brew install composer
 brew install coreutils
