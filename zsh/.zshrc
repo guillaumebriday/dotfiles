@@ -27,6 +27,7 @@ alias cl="clear"
 alias sites="cd ~/Sites"
 alias weather='curl -s "wttr.in/?lang=fr" | sed -n "1,7p"'
 alias cask="brew cask"
+alias cat="ccat"
 
 # Git aliases
 alias gau="git add -u"
