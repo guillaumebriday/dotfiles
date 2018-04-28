@@ -50,12 +50,12 @@ brew cask install dropbox
 brew cask install filezilla
 brew cask install firefox
 brew cask install google-chrome
-brew cask install insomnia
 brew cask install iterm2
 brew cask install itsycal
 brew cask install kap
 brew cask install logitech-options
 brew cask install plex-media-player
+brew cask install postman
 brew cask install rambox
 brew cask install sequel-pro
 brew cask install spotify
