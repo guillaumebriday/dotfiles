@@ -26,6 +26,7 @@
         "**/CVS": true,
         "**/.DS_Store": true,
         "**/.vagrant": true,
+        "**/.vscode": true,
         "**/.sass-cache": true
     },
     "extensions.ignoreRecommendations": true,
@@ -39,7 +40,15 @@
         ".php_cs.dist": "php",
         "*.scss": "sass",
         "*.yml.j2": "yaml",
-        "*.toml.j2": "toml"
+        "*.toml.j2": "toml",
+        "*.json.j2": "json",
+        "hosts": "ini",
+        "*.conf.j2": "ini",
+        "nginx.conf.j2": "NGINX",
+        "Dockerfile.j2": "dockerfile",
+        ".env.j2": "ini",
+        ".zshrc.j2": "ini",
+        ".env": "ini"
     },
     "emmet.triggerExpansionOnTab": true,
     "explorer.confirmDelete": false,
@@ -71,5 +80,15 @@
     "gitlens.codeLens.recentChange.enabled": false,
     "gitlens.gitExplorer.enabled": false,
     "files.autoSave": "onWindowChange",
-    "workbench.sideBar.location": "right"
+    "workbench.sideBar.location": "right",
+    "gitlens.advanced.messages": {
+        "suppressCommitHasNoPreviousCommitWarning": false,
+        "suppressCommitNotFoundWarning": false,
+        "suppressFileNotUnderSourceControlWarning": false,
+        "suppressGitVersionWarning": false,
+        "suppressLineUncommittedWarning": false,
+        "suppressNoRepositoryWarning": false,
+        "suppressResultsExplorerNotice": false,
+        "suppressShowKeyBindingsNotice": true
+    }
 }
