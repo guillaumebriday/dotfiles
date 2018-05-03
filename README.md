@@ -91,6 +91,7 @@ $ cp ssh/config ~/.ssh/config
 Here too, just move the zsh config file to your home folder.
 
 ```bash
+$ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" # install oh-my-zsh
 $ cp zsh/.zshrc ~/.zshrc
 $ touch ~/.hushlogin # If you want to hide the last login banner on logging
 ```
