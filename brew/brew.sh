@@ -43,6 +43,7 @@ brew tap caskroom/cask
 brew tap homebrew/command-not-found
 brew tap caskroom/drivers
 
+brew cask install alfred
 brew cask install bettertouchtool
 brew cask install discord
 brew cask install docker
