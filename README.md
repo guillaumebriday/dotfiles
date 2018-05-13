@@ -44,6 +44,13 @@ $ chmod +x ruby/rvm.sh # Make sure you can execute the file
 $ ruby/rvm.sh
 ```
 
+### PHP with composer
+
+```bash
+$ chmod +x php/composer.sh # Make sure you can execute the file
+$ php/composer.sh
+```
+
 ### masOS
 
 Before running the ```mas``` command, be sure to install ```brew``` with the last command.

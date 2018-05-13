@@ -12,11 +12,13 @@ then
 fi
 
 # User configuration
-
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
+
+# Add composer to PATH for scripting.
+export PATH="$PATH:$HOME/.composer/vendor/bin"
 
 source $ZSH/oh-my-zsh.sh
 
