@@ -15,4 +15,4 @@ rvm install ruby --latest
 rvm use ruby --latest --default
 
 # Installing Bundler
-gem install bundler
+gem install bundler rails
