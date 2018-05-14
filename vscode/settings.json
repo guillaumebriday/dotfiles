@@ -29,6 +29,9 @@
         "**/.vscode": true,
         "**/.sass-cache": true
     },
+    "[php]": {
+        "editor.tabSize": 4,
+    },
     "extensions.ignoreRecommendations": true,
     "material-icon-theme.showUpdateMessage": false,
     "emmet.includeLanguages": {
@@ -48,7 +51,10 @@
         "Dockerfile.j2": "dockerfile",
         ".env.j2": "ini",
         ".zshrc.j2": "ini",
-        ".env": "ini"
+        ".env": "ini",
+        ".env.testing": "ini",
+        ".env.example": "ini",
+        ".env.travis": "ini"
     },
     "emmet.triggerExpansionOnTab": true,
     "explorer.confirmDelete": false,
