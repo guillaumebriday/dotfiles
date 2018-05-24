@@ -31,7 +31,7 @@ This is my dotfiles for my system customizations and to setup my development env
 Packages and applications are installed with [https://brew.sh/](https://brew.sh/).
 
 ```bash
-$ chmod +x brew/brew.sh # Make sure you can execute the file
+$ chmod u+x brew/brew.sh # Make sure you can execute the file
 $ brew/brew.sh
 ```
 
@@ -40,14 +40,14 @@ $ brew/brew.sh
 Ruby is manage with [https://rvm.io](https://rvm.io).
 
 ```bash
-$ chmod +x ruby/rvm.sh # Make sure you can execute the file
+$ chmod u+x ruby/rvm.sh # Make sure you can execute the file
 $ ruby/rvm.sh
 ```
 
 ### PHP with composer
 
 ```bash
-$ chmod +x php/composer.sh # Make sure you can execute the file
+$ chmod u+x php/composer.sh # Make sure you can execute the file
 $ php/composer.sh
 ```
 
@@ -56,7 +56,7 @@ $ php/composer.sh
 Before running the ```mas``` command, be sure to install ```brew``` with the last command.
 
 ```bash
-$ chmod +x ./macOS/mas.sh # Make sure you can execute the file
+$ chmod u+x ./macOS/mas.sh # Make sure you can execute the file
 $ ./macOS/mas.sh
 ```
 
@@ -65,7 +65,7 @@ $ ./macOS/mas.sh
 When setting up a new Mac, you may want to set some sensible macOS defaults.
 
 ```bash
-$ chmod +x ./macOS/.macos # Make sure you can execute the file
+$ chmod u+x ./macOS/.macos # Make sure you can execute the file
 $ ./macOS/.macos
 ```
 
@@ -106,7 +106,7 @@ $ touch ~/.hushlogin # If you want to hide the last login banner on logging
 ### iTerm2
 
 ```bash
-$ chmod +x iTerm2/iterm.sh # Make sure you can execute the file
+$ chmod u+x iTerm2/iterm.sh # Make sure you can execute the file
 $ iTerm2/iterm.sh
 ```
 
@@ -120,7 +120,7 @@ It's just an export of my BTT configuration. To install, just import it into BTT
 
 Install extensions :
 ```bash
-$ chmod +x ./vscode/package.sh # Make sure you can execute the file
+$ chmod u+x ./vscode/package.sh # Make sure you can execute the file
 $ ./vscode/package.sh
 ```
 
