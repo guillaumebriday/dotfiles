@@ -29,6 +29,7 @@ code --install-extension rebornix.Ruby
 code --install-extension robinbentley.sass-indented
 code --install-extension shanoor.vscode-nginx
 code --install-extension sianglim.slim
+code --install-extension sysoev.language-stylus
 code --install-extension Tyriar.sort-lines
 code --install-extension usernamehw.indent-one-space
 code --install-extension viatsko.theme-base16-ocean-dark
