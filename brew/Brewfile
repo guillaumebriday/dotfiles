@@ -1,0 +1,81 @@
+tap 'caskroom/cask'
+tap 'homebrew/command-not-found'
+tap 'caskroom/drivers'
+
+# install packages
+brew 'ansible'
+brew 'ccat'
+brew 'composer'
+brew 'coreutils'
+brew 'ffmpeg'
+brew 'git-extras'
+brew 'git-open'
+brew 'git'
+brew 'gitlab-runner'
+brew 'guetzli'
+brew 'htop'
+brew 'mas'
+brew 'mysql'
+brew 'node'
+brew 'php'
+brew 'postgresql'
+brew 'screenfetch'
+brew 'tig'
+brew 'vim'
+brew 'yarn'
+brew 'zsh-autosuggestions'
+brew 'zsh-syntax-highlighting'
+brew 'zsh'
+
+# Casks
+cask 'alfred'
+cask 'bettertouchtool'
+cask 'chromedriver'
+cask 'discord'
+cask 'docker'
+cask 'dropbox'
+cask 'filezilla'
+cask 'firefox'
+cask 'google-chrome'
+cask 'iterm2'
+cask 'itsycal'
+cask 'kap'
+cask 'logitech-options'
+cask 'plex-media-player'
+cask 'postman'
+cask 'rambox'
+cask 'sequel-pro'
+cask 'spotify'
+cask 'steam'
+cask 'synology-drive'
+cask 'vagrant'
+cask 'virtualbox'
+cask 'visual-studio-code'
+cask 'vlc'
+
+# Quick Look plugins
+cask 'qlcolorcode'
+cask 'qlmarkdown'
+cask 'qlstephen'
+cask 'quicklook-csv'
+cask 'quicklook-json'
+
+# Mas
+mas "1Password", id: 443987910
+mas "DrCleaner", id: 1133028347
+mas "HEIC Converter", id: 1294126402
+mas "iStat Menus", id: 1319778037
+mas "Gifski", id: 1351639930
+mas "iMovie", id: 408981434
+mas "Keynote", id: 409183694
+mas "Pages", id: 409201541
+mas "Numbers", id: 409203825
+mas "DaisyDisk", id: 411643860
+mas "TheUnarchiver", id: 425424353
+mas "Magnet", id: 441258766
+mas "1Password", id: 443987910
+mas "Xcode", id: 497799835
+mas "Tweetbot", id: 1384080005
+mas "Leaf", id: 576338668
+mas "Telegram", id: 747648890
+mas "Slack", id: 803453959

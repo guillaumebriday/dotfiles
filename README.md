@@ -51,20 +51,12 @@ $ chmod u+x php/composer.sh # Make sure you can execute the file
 $ php/composer.sh
 ```
 
-### masOS
-
-Before running the ```mas``` command, be sure to install ```brew``` with the last command.
-
-```bash
-$ chmod u+x ./macOS/mas.sh # Make sure you can execute the file
-$ ./macOS/mas.sh
-```
-
 #### Sensible macOS defaults
 
 When setting up a new Mac, you may want to set some sensible macOS defaults.
 
 ```bash
+$ xcode-select --install
 $ chmod u+x ./macOS/.macos # Make sure you can execute the file
 $ ./macOS/.macos
 ```
