@@ -80,7 +80,8 @@
         "**/.git/subtree-cache/**": true,
         "**/node_modules/**": true,
         "**/dist/**": true,
-        "**/vendor/**": true
+        "**/vendor/**": true,
+        "**/storage/tmp/**": true
     },
     "gitlens.codeLens.authors.enabled": false,
     "gitlens.codeLens.recentChange.enabled": false,
@@ -96,5 +97,7 @@
         "suppressNoRepositoryWarning": false,
         "suppressResultsExplorerNotice": false,
         "suppressShowKeyBindingsNotice": true
-    }
+    },
+    "gitlens.historyExplorer.enabled": false,
+    "files.defaultLanguage": "markdown"
 }
