@@ -1,6 +1,7 @@
 [user]
 	name = Guillaume Briday
 	email = guillaumebriday@gmail.com
+	signingkey = E1BCBA0E2532A75D
 [core]
 	editor = vim
 	excludesfile = ~/.gitignore_global
@@ -13,3 +14,7 @@
 	ui = true
 [pager]
 	branch = false
+[commit]
+	gpgsign = true
+[gpg]
+	program = gpg
