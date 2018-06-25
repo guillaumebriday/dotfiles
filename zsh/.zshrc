@@ -30,6 +30,8 @@ alias sites="cd ~/Sites"
 alias weather='curl -s "wttr.in/?lang=fr" | sed -n "1,7p"'
 alias cask="brew cask"
 alias cat="ccat"
+alias c="bundle exec rails c"
+alias s="bundle exec rails s"
 
 # Git aliases
 alias gau="git add -u"
