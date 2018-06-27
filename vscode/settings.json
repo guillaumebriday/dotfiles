@@ -32,6 +32,9 @@
     "[php]": {
         "editor.tabSize": 4,
     },
+    "[ruby]": {
+        "editor.tabSize": 2,
+    },
     "extensions.ignoreRecommendations": true,
     "material-icon-theme.showUpdateMessage": false,
     "emmet.includeLanguages": {
