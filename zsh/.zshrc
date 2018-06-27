@@ -32,6 +32,7 @@ alias cask="brew cask"
 alias cat="ccat"
 alias c="bundle exec rails c"
 alias s="bundle exec rails s"
+alias mkdir="mkdir -p"
 
 # Git aliases
 alias gau="git add -u"
