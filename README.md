@@ -42,6 +42,7 @@ Ruby is manage with [https://rvm.io](https://rvm.io).
 ```bash
 $ chmod u+x ruby/rvm.sh # Make sure you can execute the file
 $ ruby/rvm.sh
+$ cp ruby/.gemrc ~/
 ```
 
 ### PHP with composer
