@@ -12,7 +12,6 @@ code --install-extension formulahendry.auto-close-tag
 code --install-extension formulahendry.auto-rename-tag
 code --install-extension ginfuru.ginfuru-vscode-jekyll-syntax
 code --install-extension ginfuru.vscode-jekyll-snippets
-code --install-extension hollowtree.vue-snippets
 code --install-extension karunamurti.haml
 code --install-extension marcostazi.VS-code-vagrantfile
 code --install-extension miguel-savignano.ruby-symbols
