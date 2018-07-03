@@ -1,7 +1,10 @@
 #!/usr/bin/env bash
 
 code --install-extension alefragnani.project-manager
+code --install-extension atipugin.rails-partial
 code --install-extension bmewburn.vscode-intelephense-client
+code --install-extension bung87.rails
+code --install-extension bung87.vscode-gemfile
 code --install-extension bungcip.better-toml
 code --install-extension CoenraadS.bracket-pair-colorizer
 code --install-extension CraigMaslowski.erb
@@ -12,6 +15,7 @@ code --install-extension formulahendry.auto-close-tag
 code --install-extension formulahendry.auto-rename-tag
 code --install-extension ginfuru.ginfuru-vscode-jekyll-syntax
 code --install-extension ginfuru.vscode-jekyll-snippets
+code --install-extension Hridoy.rails-snippets
 code --install-extension karunamurti.haml
 code --install-extension marcostazi.VS-code-vagrantfile
 code --install-extension miguel-savignano.ruby-symbols
@@ -20,7 +24,6 @@ code --install-extension neilbrayfield.php-docblocker
 code --install-extension neilding.language-liquid
 code --install-extension octref.vetur
 code --install-extension onecentlin.laravel-blade
-code --install-extension patbenatar.advanced-new-file
 code --install-extension PeterJausovec.vscode-docker
 code --install-extension PKief.material-icon-theme
 code --install-extension pnp.polacode
@@ -28,6 +31,7 @@ code --install-extension rebornix.Ruby
 code --install-extension robinbentley.sass-indented
 code --install-extension shanoor.vscode-nginx
 code --install-extension sianglim.slim
+code --install-extension sporto.rails-go-to-spec
 code --install-extension sysoev.language-stylus
 code --install-extension Tyriar.sort-lines
 code --install-extension usernamehw.indent-one-space
@@ -35,3 +39,4 @@ code --install-extension viatsko.theme-base16-ocean-dark
 code --install-extension wayou.vscode-todo-highlight
 code --install-extension whatwedo.twig
 code --install-extension wmaurer.change-case
+code --install-extension yzhang.markdown-all-in-one
