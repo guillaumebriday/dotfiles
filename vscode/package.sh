@@ -17,6 +17,7 @@ code --install-extension ginfuru.ginfuru-vscode-jekyll-syntax
 code --install-extension ginfuru.vscode-jekyll-snippets
 code --install-extension Hridoy.rails-snippets
 code --install-extension karunamurti.haml
+code --install-extension kumar-harsh.graphql-for-vscode
 code --install-extension marcostazi.VS-code-vagrantfile
 code --install-extension miguel-savignano.ruby-symbols
 code --install-extension mrmlnc.vscode-apache
@@ -40,3 +41,4 @@ code --install-extension wayou.vscode-todo-highlight
 code --install-extension whatwedo.twig
 code --install-extension wmaurer.change-case
 code --install-extension yzhang.markdown-all-in-one
+code --install-extension zignd.html-css-class-completion
