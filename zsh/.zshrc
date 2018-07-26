@@ -43,7 +43,7 @@ alias gs="gst"
 alias gsu="clear && git status -u"
 alias nah="git reset --hard HEAD && git clean -fd"
 alias undo="git reset HEAD\^"
-alias wip="git add . && git commit -m WIP"
+alias wip='git add -A; git rm $(git ls-files --deleted) 2> /dev/null; git commit --no-verify -m "--wip-- [skip ci]"'
 alias go="git open"
 
 # Vagrant aliases
