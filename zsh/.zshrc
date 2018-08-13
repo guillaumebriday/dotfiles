@@ -61,6 +61,7 @@ alias yt="docker run --rm -u $(id -u):$(id -g) -v $PWD:/data vimagick/youtube-dl
 
 # Artisan aliases
 alias artisan="php artisan"
+alias mfs="php artisan migrate:fresh --seed"
 
 # Source zsh-autosuggestions
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
