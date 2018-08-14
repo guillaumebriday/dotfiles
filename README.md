@@ -42,8 +42,8 @@ Ruby is manage with [https://rvm.io](https://rvm.io).
 ```bash
 $ chmod u+x ruby/rvm.sh # Make sure you can execute the file
 $ ruby/rvm.sh
-$ cp ruby/.gemrc ~/
-$ cp ruby/.irbrc ~/
+$ ln -fs ~/dotfiles/ruby/.gemrc ~/
+$ ln -fs ~/dotfiles/ruby/.irbrc ~/
 ```
 
 ### PHP with composer
@@ -65,18 +65,18 @@ $ ./macOS/.macos
 
 ### Git
 
-Nothing to install here, just move the content of the Git folder into your home :
+Nothing to install here, link the content of the Git folder into your home :
 
 ```bash
-$ cp -r git/. ~/.
+$ find ~/dotfiles/git -type f | xargs -I file ln -fs file ~/
 ```
 
 ### Vim
 
-Same here, just move the ```vimrc``` file into your home folder.
+Same here, link the ```vimrc``` file into your home folder.
 
 ```bash
-$ cp vim/.vimrc ~/
+$ ln -fs ~/dotfiles/vim/.vimrc ~/
 ```
 
 ### SSH
@@ -89,11 +89,11 @@ $ cp ssh/config ~/.ssh/config
 
 ### ZSH
 
-Here too, just move the zsh config file to your home folder.
+Here too, link the zsh config file to your home folder.
 
 ```bash
 $ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" # install oh-my-zsh
-$ cp zsh/.zshrc ~/.zshrc
+$ ln -fs ~/dotfiles/zsh/.zshrc ~/
 $ touch ~/.hushlogin # If you want to hide the last login banner on logging
 ```
 
@@ -108,7 +108,7 @@ Once the theme is downloaded, you can modify your iTerm2 settings in the app.
 
 ### BetterTouchTool
 
-It's just an export of my BTT configuration. To install, just import it into BTT.
+It's an export of my BTT configuration. To install, import it into BTT.
 
 ### VS Code
 
@@ -118,7 +118,7 @@ $ chmod u+x ./vscode/package.sh # Make sure you can execute the file
 $ ./vscode/package.sh
 ```
 
-To add my configuration :
+To link my configuration :
 ```bash
-$ cp -r vscode/. ~/Library/Application\ Support/Code/User/
+$ find ~/dotfiles/vscode -name '*.json' | xargs -0 -I file ln -fs file ~/Library/Application\ Support/Code/User/
 ```
