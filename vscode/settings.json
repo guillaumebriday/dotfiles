@@ -102,5 +102,6 @@
         "suppressShowKeyBindingsNotice": true
     },
     "gitlens.historyExplorer.enabled": false,
-    "files.defaultLanguage": "markdown"
+    "files.defaultLanguage": "markdown",
+    "breadcrumbs.enabled": true
 }
