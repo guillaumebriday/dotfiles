@@ -16,6 +16,6 @@
 	branch = false
 	diff = less -+FX
 [commit]
-	gpgsign = true
+	# gpgsign = true
 [gpg]
 	program = gpg

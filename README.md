@@ -120,5 +120,5 @@ $ ./vscode/package.sh
 
 To link my configuration :
 ```bash
-$ find ~/dotfiles/vscode -name '*.json' | xargs -0 -I file ln -fs file ~/Library/Application\ Support/Code/User/
+$ find ~/dotfiles/vscode -name '*.json' | xargs -I file ln -fs file ~/Library/Application\ Support/Code/User/
 ```
