@@ -33,9 +33,5 @@
         "key": "alt+up",
         "command": "-editor.action.moveLinesUpAction",
         "when": "editorTextFocus && !editorReadonly"
-    },
-    {
-        "key": "cmd+n",
-        "command": "extension.advancedNewFile",
     }
 ]
