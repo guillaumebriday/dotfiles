@@ -1,23 +1,19 @@
 {
-    "workbench.welcome.enabled": false,
+    "workbench.startupEditor": "newUntitledFile",
     "workbench.colorTheme": "Base16 Ocean Dark",
     "workbench.iconTheme": "material-icon-theme",
     "editor.fontSize": 15,
-    "editor.renderWhitespace": "all",
-    "editor.insertSpaces": true,
+    "editor.renderWhitespace": "boundary",
     "editor.dragAndDrop": false,
     "files.trimTrailingWhitespace": true,
     "files.insertFinalNewline": true,
     "telemetry.enableTelemetry": false,
     "telemetry.enableCrashReporter": false,
-    "workbench.activityBar.visible": true,
-    "editor.autoIndent": true,
     "explorer.openEditors.visible": 0,
     "docker.showExplorer": false,
     "projectManager.treeview.visible": false,
     "workbench.fontAliasing": "auto",
     "explorer.sortOrder": "type",
-    "editor.tabSize": 2,
     "terminal.integrated.copyOnSelection": true,
     "files.exclude": {
         "**/.git": true,
@@ -36,7 +32,6 @@
         "editor.tabSize": 2,
     },
     "extensions.ignoreRecommendations": true,
-    "material-icon-theme.showUpdateMessage": false,
     "emmet.includeLanguages": {
         "blade.php": "html",
         "vue": "html"
@@ -62,7 +57,6 @@
     "emmet.triggerExpansionOnTab": true,
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
-    "editor.minimap.enabled": true,
     "search.exclude": {
         "**/node_modules": true,
         "**/bower_components": true,
@@ -103,5 +97,6 @@
     },
     "gitlens.historyExplorer.enabled": false,
     "files.defaultLanguage": "markdown",
-    "breadcrumbs.enabled": true
+    "breadcrumbs.enabled": true,
+    "gitlens.advanced.telemetry.enabled": false
 }
