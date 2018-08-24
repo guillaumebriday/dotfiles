@@ -45,6 +45,7 @@ alias nah="git reset --hard HEAD && git clean -fd"
 alias undo="git reset HEAD\^"
 alias wip='git add -A; git rm $(git ls-files --deleted) 2> /dev/null; git commit --no-verify -m "--wip-- [skip ci]"'
 alias go="git open"
+alias tigd="tig master..HEAD --first-parent --no-merges"
 
 # Vagrant aliases
 alias vd="vagrant destroy"
