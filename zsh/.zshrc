@@ -34,6 +34,7 @@ alias c="bundle exec rails c"
 alias s="bundle exec rails s"
 alias mkdir="mkdir -p"
 alias f="open ."
+alias man="tldr"
 
 # Git aliases
 alias gau="git add -u"
