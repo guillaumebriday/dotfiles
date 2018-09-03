@@ -98,5 +98,6 @@
     "gitlens.historyExplorer.enabled": false,
     "files.defaultLanguage": "markdown",
     "breadcrumbs.enabled": true,
-    "gitlens.advanced.telemetry.enabled": false
+    "gitlens.advanced.telemetry.enabled": false,
+    "editor.tabSize": 2
 }
