@@ -96,7 +96,6 @@
             <outline title="Backblaze Blog RSS Feed" xmlUrl="https://www.backblaze.com/blog/feed/" type="rss" text="Backblaze Blog RSS Feed"/>
             <outline title="InVision Blog » Feed" xmlUrl="https://www.invisionapp.com/blog/feed/" type="rss" text="InVision Blog » Feed"/>
             <outline title="Blog – Plex" xmlUrl="https://www.plex.tv/blog/feed/" type="rss" text="Blog – Plex"/>
-            <outline title="Raspberry Pi" xmlUrl="https://www.raspberrypi.org/feed/" type="rss" text="Raspberry Pi"/>
             <outline title="Sublime Blog" xmlUrl="https://www.sublimetext.com/blog/feed" type="rss" text="Sublime Blog"/>
             <outline title="Synology News" xmlUrl="https://www.synology.com/cgi/company?action=getNewsRSS&amp;lang=en-us" type="rss" text="Synology News"/>
         </outline>
