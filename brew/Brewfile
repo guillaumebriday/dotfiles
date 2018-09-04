@@ -8,9 +8,9 @@ brew 'ccat'
 brew 'composer'
 brew 'coreutils'
 brew 'ffmpeg'
-brew 'git'
 brew 'git-extras'
 brew 'git-open'
+brew 'git'
 brew 'gitlab-runner'
 brew 'gnupg'
 brew 'guetzli'
@@ -24,9 +24,9 @@ brew 'screenfetch'
 brew 'tig'
 brew 'vim'
 brew 'yarn'
-brew 'zsh'
 brew 'zsh-autosuggestions'
 brew 'zsh-syntax-highlighting'
+brew 'zsh'
 
 # Casks
 cask 'alfred'
@@ -66,20 +66,19 @@ cask 'quicklook-json'
 
 # Mas
 mas "1Password", id: 443987910
-mas "DrCleaner", id: 1133028347
-mas "HEIC Converter", id: 1294126402
-mas "iStat Menus", id: 1319778037
-mas "Gifski", id: 1351639930
-mas "iMovie", id: 408981434
-mas "Keynote", id: 409183694
-mas "Pages", id: 409201541
-mas "Numbers", id: 409203825
 mas "DaisyDisk", id: 411643860
-mas "TheUnarchiver", id: 425424353
+mas "DrCleaner", id: 1133028347
+mas "Gifski", id: 1351639930
+mas "HEIC Converter", id: 1294126402
+mas "iMovie", id: 408981434
+mas "iStat Menus", id: 1319778037
+mas "Keynote", id: 409183694
 mas "Magnet", id: 441258766
-mas "1Password", id: 443987910
-mas "Xcode", id: 497799835
-mas "Tweetbot", id: 1384080005
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
 mas "Reeder", id: 880001334
-mas "Telegram", id: 747648890
 mas "Slack", id: 803453959
+mas "Telegram", id: 747648890
+mas "TheUnarchiver", id: 425424353
+mas "Tweetbot", id: 1384080005
+mas "Xcode", id: 497799835
