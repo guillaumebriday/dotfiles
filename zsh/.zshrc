@@ -35,6 +35,10 @@ alias s="bundle exec rails s"
 alias mkdir="mkdir -p"
 alias f="open ."
 alias man="tldr"
+alias hostfile="sudo vim /etc/hosts"
+
+# Flush Directory Service cache
+alias flushdns="sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder"
 
 # Git aliases
 alias gau="git add -u"
@@ -61,6 +65,10 @@ alias vu="vagrant up"
 alias dps="docker ps"
 alias dc="docker-compose"
 alias yt="docker run --rm -u $(id -u):$(id -g) -v $PWD:/data vimagick/youtube-dl"
+
+# php aliases
+alias phpunit="vendor/bin/phpunit"
+alias phpcs="vendor/bin/php-cs-fixer"
 
 # Artisan aliases
 alias artisan="php artisan"
