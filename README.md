@@ -71,6 +71,14 @@ Nothing to install here, link the content of the Git folder into your home :
 $ find ~/dotfiles/git -type f | xargs -I file ln -fs file ~/
 ```
 
+### GPG
+
+Nothing to install here, link the content of the GPG folder into your home :
+
+```bash
+$ ln -fs ~/dotfiles/gpg/gpg-agent.conf ~/.gnupg
+```
+
 ### Vim
 
 Same here, link the ```vimrc``` file into your home folder.
