@@ -61,6 +61,7 @@ When setting up a new Mac, you may want to set some sensible macOS defaults.
 $ xcode-select --install
 $ chmod u+x ./macOS/.macos # Make sure you can execute the file
 $ ./macOS/.macos
+$ sudo cp ~/dotfiles/macOS/nsmb.conf /etc/nsmb.conf
 ```
 
 ### Git
