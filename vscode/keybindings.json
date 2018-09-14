@@ -33,5 +33,11 @@
         "key": "alt+up",
         "command": "-editor.action.moveLinesUpAction",
         "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "alt+space",
+        "command": "type",
+        "when": "editorTextFocus && !editorReadonly",
+        "args": { "text": " " }
     }
 ]
