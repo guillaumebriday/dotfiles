@@ -14,5 +14,5 @@ rvm get head
 rvm install ruby --latest
 rvm use ruby --latest --default
 
-# Installing Bundler
-gem install bundler rails awesome_print
+# Installing default gems
+gem install bundler rails awesome_print docker-sync
