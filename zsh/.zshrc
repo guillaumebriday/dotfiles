@@ -37,6 +37,7 @@ alias mkdir="mkdir -p"
 alias f="open ."
 alias man="tldr"
 alias hostfile="sudo vim /etc/hosts"
+alias mrubocop="git ls-files -m | xargs ls -1 2>/dev/null | grep '\.rb$' | xargs rubocop"
 
 # Flush Directory Service cache
 alias flushdns="sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder"
