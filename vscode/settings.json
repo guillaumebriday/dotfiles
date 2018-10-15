@@ -108,5 +108,6 @@
     "files.defaultLanguage": "markdown",
     "breadcrumbs.enabled": true,
     "gitlens.advanced.telemetry.enabled": false,
-    "editor.tabSize": 2
+    "editor.tabSize": 2,
+    "workbench.settings.editor": "json"
 }
