@@ -109,5 +109,8 @@
     "breadcrumbs.enabled": true,
     "gitlens.advanced.telemetry.enabled": false,
     "editor.tabSize": 2,
-    "workbench.settings.editor": "json"
+    "workbench.settings.editor": "json",
+    "gitlens.mode.statusBar.enabled": false,
+    "workbench.statusBar.feedback.visible": false,
+    "debug.showInStatusBar": "never"
 }
