@@ -112,5 +112,8 @@
     "workbench.settings.editor": "json",
     "gitlens.mode.statusBar.enabled": false,
     "workbench.statusBar.feedback.visible": false,
-    "debug.showInStatusBar": "never"
+    "debug.showInStatusBar": "never",
+    "search.showLineNumbers": true,
+    "search.useGlobalIgnoreFiles": true,
+    "workbench.editor.highlightModifiedTabs": true
 }
