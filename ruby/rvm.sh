@@ -4,7 +4,7 @@
 if test ! $(which rvm)
 then
   echo "Installing rvm for you."
-  ruby -e "$(curl -sSL https://get.rvm.io | bash -s stable)"
+  curl -sSL https://get.rvm.io | bash -s stable
 fi
 
 # Upgrading to the latest repository source version
