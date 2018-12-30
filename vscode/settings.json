@@ -47,6 +47,7 @@
         "*.conf.j2": "ini",
         "nginx.conf.j2": "NGINX",
         "Dockerfile.j2": "dockerfile",
+        "Dockerfile.prod": "dockerfile",
         ".env.j2": "ini",
         ".zshrc.j2": "ini",
         ".env": "ini",
@@ -115,5 +116,10 @@
     "debug.showInStatusBar": "never",
     "search.showLineNumbers": true,
     "search.useGlobalIgnoreFiles": true,
-    "workbench.editor.highlightModifiedTabs": true
+    "workbench.editor.highlightModifiedTabs": true,
+    "window.zoomLevel": 0,
+    "gitlens.views.repositories.enabled": false,
+    "gitlens.views.fileHistory.enabled": false,
+    "gitlens.views.lineHistory.enabled": false,
+    "javascript.updateImportsOnFileMove.enabled": "always"
 }
