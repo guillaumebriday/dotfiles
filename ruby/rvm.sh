@@ -16,3 +16,7 @@ rvm use ruby --latest --default
 
 # Installing default gems
 gem install bundler rails awesome_print docker-sync
+
+# Configuration files
+ln -fs ~/dotfiles/ruby/.gemrc ~/
+ln -fs ~/dotfiles/ruby/.irbrc ~/

@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+# Configuration files
+find ~/dotfiles/vscode -name '*.json' | xargs -I file ln -fs file ~/Library/Application\ Support/Code/User/
+
+# Packages
 code --install-extension aki77.rails-partial
 code --install-extension alefragnani.project-manager
 code --install-extension atipugin.rails-partial

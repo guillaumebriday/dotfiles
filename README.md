@@ -42,8 +42,6 @@ Ruby is manage with [https://rvm.io](https://rvm.io).
 ```bash
 $ chmod u+x ruby/rvm.sh # Make sure you can execute the file
 $ ruby/rvm.sh
-$ ln -fs ~/dotfiles/ruby/.gemrc ~/
-$ ln -fs ~/dotfiles/ruby/.irbrc ~/
 ```
 
 ### PHP with composer
@@ -101,9 +99,8 @@ $ cp ssh/config ~/.ssh/config
 Here too, link the zsh config file to your home folder.
 
 ```bash
-$ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" # install oh-my-zsh
-$ ln -fs ~/dotfiles/zsh/.zshrc ~/
-$ touch ~/.hushlogin # If you want to hide the last login banner on logging
+$ chmod u+x zsh/zsh.sh # Make sure you can execute the file
+$ zsh/zsh.sh
 ```
 
 ### iTerm2
@@ -123,11 +120,6 @@ It's an export of my BTT configuration. To install, import it into BTT.
 
 Install extensions :
 ```bash
-$ chmod u+x ./vscode/package.sh # Make sure you can execute the file
-$ ./vscode/package.sh
-```
-
-To link my configuration :
-```bash
-$ find ~/dotfiles/vscode -name '*.json' | xargs -I file ln -fs file ~/Library/Application\ Support/Code/User/
+$ chmod u+x ./vscode/vscode.sh # Make sure you can execute the file
+$ ./vscode/vscode.sh
 ```
