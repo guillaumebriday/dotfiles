@@ -7,13 +7,11 @@ brew 'ansible'
 brew 'ccat'
 brew 'composer'
 brew 'coreutils'
-brew 'ctop'
 brew 'ffmpeg'
 brew 'git-extras'
 brew 'git-open'
 brew 'git-recent'
 brew 'git'
-brew 'gitlab-runner'
 brew 'gnupg'
 brew 'guetzli'
 brew 'htop'
@@ -47,13 +45,11 @@ cask 'insomnia'
 cask 'iterm2'
 cask 'itsycal'
 cask 'kap'
-cask 'logitech-options'
 cask 'plex-media-player'
 cask 'postman'
 cask 'rambox'
 cask 'sequel-pro'
 cask 'spotify'
-cask 'steam'
 cask 'synology-drive'
 cask 'vagrant'
 cask 'virtualbox'
@@ -71,8 +67,6 @@ cask 'quicklook-json'
 mas "1Password", id: 443987910
 mas "DaisyDisk", id: 411643860
 mas "DrCleaner", id: 1133028347
-mas "Gifski", id: 1351639930
-mas "HEIC Converter", id: 1294126402
 mas "iMovie", id: 408981434
 mas "iStat Menus", id: 1319778037
 mas "Keynote", id: 409183694
