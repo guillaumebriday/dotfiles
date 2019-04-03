@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+# Configuration files
+ln -fs ~/dotfiles/ruby/.gemrc ~/
+ln -fs ~/dotfiles/ruby/.irbrc ~/
+
 # Check for rvm
 if test ! $(which rvm)
 then
@@ -15,8 +19,4 @@ rvm install ruby --latest
 rvm use ruby --latest --default
 
 # Installing default gems
-gem install bundler rails awesome_print docker-sync
-
-# Configuration files
-ln -fs ~/dotfiles/ruby/.gemrc ~/
-ln -fs ~/dotfiles/ruby/.irbrc ~/
+gem install bundler rails awesome_print
