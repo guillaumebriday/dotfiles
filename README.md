@@ -24,6 +24,20 @@ This is my dotfiles for my system customizations and to setup my development env
 + BetterTouchTool configuration
 + VS Code configuration
 
+## How to use it ?
+
+Clone the project in your home directory :
+
+```bash
+$ cd ~
+$ git clone git@github.com:guillaumebriday/dotfiles.git
+$ cd dotfiles
+```
+
+**Before running any commands, you must edit files according to your needs.**
+
+For exemple, open the `brew/Brewfile` and remove applications you don't want to install from the list.
+
 ## Installation
 
 ### Brew
@@ -51,7 +65,7 @@ $ chmod u+x php/composer.sh # Make sure you can execute the file
 $ php/composer.sh
 ```
 
-#### Sensible macOS defaults
+### Sensible macOS defaults
 
 When setting up a new Mac, you may want to set some sensible macOS defaults.
 
