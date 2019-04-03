@@ -6,12 +6,7 @@ export EDITOR=vim
 ZSH_THEME="robbyrussell"
 DEFAULT_USER="$USER"
 
-plugins=(git rails bundler laravel5 osx docker)
-
-if brew command command-not-found-init > /dev/null 2>&1;
-then
-  eval "$(brew command-not-found-init)"
-fi
+plugins=(git rails bundler osx docker)
 
 # User configuration
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
@@ -38,7 +33,6 @@ alias mkdir="mkdir -p"
 alias f="open ."
 alias man="tldr"
 alias hostfile="sudo vim /etc/hosts"
-alias mrubocop="git ls-files -m | xargs ls -1 2>/dev/null | grep '\.rb$' | xargs rubocop"
 
 # Flush Directory Service cache
 alias flushdns="sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder"
@@ -68,6 +62,7 @@ alias vu="vagrant up"
 alias dps="docker ps"
 alias dc="docker-compose"
 alias yt="docker run --rm -u $(id -u):$(id -g) -v $PWD:/data vimagick/youtube-dl"
+alias dcup="docker-compose up -d"
 
 # php aliases
 alias phpunit="vendor/bin/phpunit"
