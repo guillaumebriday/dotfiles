@@ -92,7 +92,6 @@
     },
     "gitlens.codeLens.authors.enabled": false,
     "gitlens.codeLens.recentChange.enabled": false,
-    "gitlens.gitExplorer.enabled": false,
     "files.autoSave": "onWindowChange",
     "workbench.sideBar.location": "right",
     "gitlens.advanced.messages": {
@@ -105,7 +104,6 @@
         "suppressResultsExplorerNotice": false,
         "suppressShowKeyBindingsNotice": true
     },
-    "gitlens.historyExplorer.enabled": false,
     "files.defaultLanguage": "markdown",
     "breadcrumbs.enabled": true,
     "gitlens.advanced.telemetry.enabled": false,
