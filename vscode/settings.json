@@ -11,7 +11,6 @@
     "telemetry.enableCrashReporter": false,
     "explorer.openEditors.visible": 0,
     "docker.showExplorer": false,
-    "projectManager.treeview.visible": false,
     "workbench.fontAliasing": "auto",
     "explorer.sortOrder": "type",
     "terminal.integrated.copyOnSelection": true,
