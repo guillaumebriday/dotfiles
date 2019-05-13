@@ -66,6 +66,7 @@ alias dps="docker ps"
 alias dc="docker-compose"
 alias yt="docker run --rm -u $(id -u):$(id -g) -v $PWD:/data vimagick/youtube-dl"
 alias dcup="docker-compose up -d"
+dbash() { docker exec -i -t "$1" bash; }
 
 # php aliases
 alias phpunit="vendor/bin/phpunit"
