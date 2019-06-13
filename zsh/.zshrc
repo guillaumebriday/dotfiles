@@ -64,8 +64,9 @@ alias vu="vagrant up"
 # Docker aliases
 alias dps="docker ps"
 alias dc="docker-compose"
-alias yt="docker run --rm -u $(id -u):$(id -g) -v $PWD:/data vimagick/youtube-dl"
 alias dcup="docker-compose up -d"
+alias dcd="docker-compose down"
+alias yt="docker run --rm -u $(id -u):$(id -g) -v $PWD:/data vimagick/youtube-dl"
 dbash() { docker exec -i -t "$1" bash; }
 
 # php aliases
