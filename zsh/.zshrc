@@ -35,7 +35,7 @@ alias mkdir="mkdir -p"
 alias f="open ."
 alias man="tldr"
 alias hostfile="sudo vim /etc/hosts"
-alias code="vscodium"
+alias code="codium"
 
 # Flush Directory Service cache
 alias flushdns="sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder"
