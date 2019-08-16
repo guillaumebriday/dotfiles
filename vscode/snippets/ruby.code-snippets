@@ -1,0 +1,53 @@
+{
+	// Place your global snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders.
+	// Placeholders with the same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"scope": "javascript,typescript",
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+
+	"byebug": {
+		"prefix": [
+			"b"
+		],
+		"body": [
+			"byebug"
+		],
+		"description": "Print byebug."
+	},
+
+	"frozen_string_literal": {
+		"prefix": [
+			"fsl"
+		],
+		"body": [
+			"# frozen_string_literal: true",
+			"\n"
+		],
+		"description": "Print frozen_string_literal magic comment"
+	},
+
+	"strong params": {
+		"prefix": "sp",
+		"body": [
+			"def $1_params",
+			"\tparams",
+			"\t\t.require(:$1)",
+			"\t\t.permit(",
+			"\t\t\t:$2",
+			"\t\t)",
+			"end"
+		],
+		"description": "Print strong params method"
+	}
+}

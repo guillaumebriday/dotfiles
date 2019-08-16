@@ -2,6 +2,7 @@
 
 # Configuration files
 find ~/dotfiles/vscode -name '*.json' | xargs -I file ln -fs file ~/Library/Application\ Support/VSCodium/User/
+find ~/dotfiles/vscode/snippets -type f | xargs -I file ln -fs file ~/Library/Application\ Support/VSCodium/User/snippets
 
 # Packages
 code --install-extension alefragnani.project-manager
