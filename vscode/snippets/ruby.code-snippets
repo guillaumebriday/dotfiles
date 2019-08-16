@@ -16,10 +16,26 @@
 	// 	"description": "Log output to console"
 	// }
 
-	"byebug": {
-		"prefix": [
-			"b"
+	"before action": {
+		"prefix": "ba",
+		"body": [
+			"before_action :$1",
 		],
+		"description": "Print before_action."
+	},
+
+	"method index": {
+		"prefix": "index",
+		"body": [
+			"def index",
+			"\t@${1:resources} = ${2:model}.apply_filters(params).paginate(per_page: 20, page: params[:page])",
+			"end\n",
+		],
+		"description": "Print method index."
+	},
+
+	"byebug": {
+		"prefix": "b",
 		"body": [
 			"byebug"
 		],
@@ -27,9 +43,7 @@
 	},
 
 	"frozen_string_literal": {
-		"prefix": [
-			"fsl"
-		],
+		"prefix": "fsl",
 		"body": [
 			"# frozen_string_literal: true",
 			"\n"
