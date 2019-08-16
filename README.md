@@ -134,6 +134,6 @@ It's an export of my BTT configuration. To install, import it into BTT.
 
 Install extensions :
 ```bash
-$ chmod u+x ./vscode/vscode.sh # Make sure you can execute the file
-$ ./vscode/vscode.sh
+$ chmod u+x vscode/vscode.sh # Make sure you can execute the file
+$ vscode/vscode.sh
 ```
