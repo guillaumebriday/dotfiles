@@ -12,6 +12,7 @@
     "explorer.openEditors.visible": 0,
     "workbench.fontAliasing": "auto",
     "explorer.sortOrder": "type",
+    "solargraph.checkGemVersion": false,
     "terminal.integrated.copyOnSelection": true,
     "files.exclude": {
         "**/.git": true,
