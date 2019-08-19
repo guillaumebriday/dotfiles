@@ -1,0 +1,18 @@
+{
+  "Vue Single File Component with pug": {
+    "prefix": "vbasepug",
+    "body": [
+      "<template lang=\"pug\">",
+      "div",
+      "\t$1",
+      "</template>",
+      "",
+      "<script>",
+      "export default {",
+      "\t$2",
+      "}",
+      "</script>",
+    ],
+    "description": "Base for Vue File with pug lang"
+  }
+}
