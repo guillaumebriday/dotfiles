@@ -14,6 +14,8 @@
     "explorer.sortOrder": "type",
     "solargraph.checkGemVersion": false,
     "terminal.integrated.copyOnSelection": true,
+    "markdown.extension.toc.githubCompatibility": true,
+    "markdown.extension.toc.levels": "2..6",
     "files.exclude": {
         "**/.git": true,
         "**/.svn": true,
