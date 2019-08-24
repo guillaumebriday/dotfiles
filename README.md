@@ -32,6 +32,8 @@ Clone the project in your home directory :
 $ cd ~
 $ git clone git@github.com:guillaumebriday/dotfiles.git
 $ cd dotfiles
+$ xcode-select --install
+$ find ~/dotfiles -name '*.sh' | xargs -I file chmod u+x file # Make sure you can execute the scripts
 ```
 
 **Before running any commands, you must edit files according to your needs.**
@@ -45,7 +47,6 @@ For exemple, open the `brew/Brewfile` and remove applications you don't want to 
 Packages and applications are installed with [https://brew.sh/](https://brew.sh/).
 
 ```bash
-$ chmod u+x brew/brew.sh # Make sure you can execute the file
 $ brew/brew.sh
 ```
 
@@ -54,7 +55,6 @@ $ brew/brew.sh
 Ruby is manage with [https://rvm.io](https://rvm.io).
 
 ```bash
-$ chmod u+x ruby/rvm.sh # Make sure you can execute the file
 $ ruby/rvm.sh
 ```
 
@@ -63,9 +63,7 @@ $ ruby/rvm.sh
 When setting up a new Mac, you may want to set some sensible macOS defaults.
 
 ```bash
-$ xcode-select --install
-$ chmod u+x ./macOS/.macos # Make sure you can execute the file
-$ ./macOS/.macos
+$ macOS/macos.sh
 $ sudo cp ~/dotfiles/macOS/nsmb.conf /etc/nsmb.conf
 ```
 
@@ -106,14 +104,12 @@ $ cp ssh/config ~/.ssh/config
 Here too, link the zsh config file to your home folder.
 
 ```bash
-$ chmod u+x zsh/zsh.sh # Make sure you can execute the file
 $ zsh/zsh.sh
 ```
 
 ### iTerm2
 
 ```bash
-$ chmod u+x iTerm2/iterm.sh # Make sure you can execute the file
 $ iTerm2/iterm.sh
 ```
 
@@ -127,6 +123,5 @@ It's an export of my BTT configuration. To install, import it into BTT.
 
 Install extensions :
 ```bash
-$ chmod u+x vscode/vscode.sh # Make sure you can execute the file
 $ vscode/vscode.sh
 ```
