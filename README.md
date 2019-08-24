@@ -58,13 +58,6 @@ $ chmod u+x ruby/rvm.sh # Make sure you can execute the file
 $ ruby/rvm.sh
 ```
 
-### PHP with composer
-
-```bash
-$ chmod u+x php/composer.sh # Make sure you can execute the file
-$ php/composer.sh
-```
-
 ### Sensible macOS defaults
 
 When setting up a new Mac, you may want to set some sensible macOS defaults.
