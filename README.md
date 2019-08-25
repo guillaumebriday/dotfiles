@@ -21,7 +21,6 @@ This is my dotfiles for my system customizations and to setup my development env
   + Robbyrussell theme
   + Aliases
 + Arthur iTerm2 colors theme
-+ BetterTouchTool configuration
 + VS Code configuration
 
 ## How to use it ?
@@ -60,48 +59,35 @@ $ ruby/rvm.sh
 
 ### Sensible macOS defaults
 
-When setting up a new Mac, you may want to set some sensible macOS defaults.
-
 ```bash
 $ macOS/macos.sh
-$ sudo cp ~/dotfiles/macOS/nsmb.conf /etc/nsmb.conf
 ```
 
 ### Git
 
-Nothing to install here, link the content of the Git folder into your home :
-
 ```bash
-$ find ~/dotfiles/git -type f | xargs -I file ln -fs file ~/
+$ git/git.sh
 ```
 
 ### GPG
 
-Nothing to install here, link the content of the GPG folder into your home :
-
 ```bash
-$ ln -fs ~/dotfiles/gpg/gpg-agent.conf ~/.gnupg
+$ gpg/gpg.sh
 ```
 
 ### Vim
 
-Same here, link the ```vimrc``` file into your home folder.
-
 ```bash
-$ ln -fs ~/dotfiles/vim/.vimrc ~/
+$ vim/vim.sh
 ```
 
 ### SSH
 
-Configuration file for ssh keys.
-
 ```bash
-$ cp ssh/config ~/.ssh/config
+$ ssh/ssh.sh
 ```
 
 ### ZSH
-
-Here too, link the zsh config file to your home folder.
 
 ```bash
 $ zsh/zsh.sh
@@ -115,13 +101,8 @@ $ iTerm2/iterm.sh
 
 Once the theme is downloaded, you can modify your iTerm2 settings in the app.
 
-### BetterTouchTool
-
-It's an export of my BTT configuration. To install, import it into BTT.
-
 ### VS Code
 
-Install extensions :
 ```bash
 $ vscode/vscode.sh
 ```

@@ -21,16 +21,13 @@ export PATH="$PATH:$HOME/.composer/vendor/bin"
 
 source $ZSH/oh-my-zsh.sh
 
-alias zshconfig="vim ~/.zshrc"
-
 # Global aliases
+alias zshconfig="vim ~/.zshrc"
 alias cl="clear"
 alias sites="cd ~/Sites"
 alias weather='curl -s "wttr.in/lyon?lang=fr"'
 alias cask="brew cask"
 alias cat="ccat"
-alias c="bundle exec rails c"
-alias s="bundle exec rails s"
 alias mkdir="mkdir -p"
 alias f="open ."
 alias man="tldr"
@@ -69,11 +66,13 @@ alias dcd="docker-compose down"
 alias yt="docker run --rm -u $(id -u):$(id -g) -v $PWD:/data vimagick/youtube-dl"
 dbash() { docker exec -i -t "$1" bash; }
 
-# php aliases
+# Ruby aliases
+alias c="bundle exec rails c"
+alias s="bundle exec rails s"
+
+# PHP aliases
 alias phpunit="vendor/bin/phpunit"
 alias phpcs="vendor/bin/php-cs-fixer"
-
-# Artisan aliases
 alias artisan="php artisan"
 alias mfs="php artisan migrate:fresh --seed"
 
@@ -82,3 +81,4 @@ source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Source zsh-syntax-highlighting
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+export PATH="/usr/local/opt/libxml2/bin:$PATH"

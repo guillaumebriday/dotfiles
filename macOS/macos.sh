@@ -12,6 +12,9 @@ sudo -v
 # Keep-alive: update existing `sudo` time stamp until `.macos` has finished
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
+# Turn off packet signing for SMB 2 and SMB 3 connections. https://support.apple.com/en-us/HT205926
+cp ~/dotfiles/macOS/nsmb.conf /etc/nsmb.conf
+
 ###############################################################################
 # General UI/UX                                                               #
 ###############################################################################
