@@ -1,5 +1,4 @@
 tap 'caskroom/cask'
-tap 'homebrew/command-not-found'
 tap 'caskroom/drivers'
 
 # install packages
@@ -32,7 +31,6 @@ brew 'zsh'
 
 # Casks
 cask 'alfred'
-cask 'bettertouchtool'
 cask 'chromedriver'
 cask 'docker'
 cask 'dropbox'
@@ -55,10 +53,12 @@ cask 'vscodium'
 
 # Quick Look plugins
 cask 'qlcolorcode'
+cask 'qlimagesize'
 cask 'qlmarkdown'
 cask 'qlstephen'
 cask 'quicklook-csv'
 cask 'quicklook-json'
+cask 'webpquicklook'
 
 # Mas
 mas "1Password", id: 443987910
