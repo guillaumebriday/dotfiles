@@ -69,12 +69,6 @@ $ macOS/macos.sh
 $ git/git.sh
 ```
 
-### GPG
-
-```bash
-$ gpg/gpg.sh
-```
-
 ### Vim
 
 ```bash

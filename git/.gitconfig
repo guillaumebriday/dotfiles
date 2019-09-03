@@ -1,22 +1,18 @@
 [user]
-	name = Guillaume Briday
-	email = guillaumebriday@gmail.com
-	signingkey = E1BCBA0E2532A75D
+  name = Guillaume Briday
+  email = guillaumebriday@gmail.com
 [core]
-	editor = vim
-	excludesfile = ~/.gitignore_global
-	autocrlf = input
+  editor = vim
+  excludesfile = ~/.gitignore_global
+  autocrlf = input
 [pull]
-	rebase = true
+  rebase = true
 [merge]
-	ff = false
+  ff = false
 [color]
-	ui = true
+  ui = true
 [pager]
-	branch = false
-	diff = less -+FX
+  branch = false
+  diff = less -+FX
 [commit]
-	gpgsign = true
-	verbose = true
-[gpg]
-	program = gpg
+  verbose = true
