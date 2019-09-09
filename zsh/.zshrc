@@ -32,6 +32,8 @@ alias f="open ."
 alias man="tldr"
 alias hostfile="sudo vim /etc/hosts"
 alias code="codium"
+alias yui="yarn upgrade-interactive --latest"
+alias please='sudo $(fc -ln -1)'
 
 # Flush Directory Service cache
 alias flushdns="sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder"
@@ -61,6 +63,7 @@ alias vu="vagrant up"
 alias dps="docker ps"
 alias dc="docker-compose"
 alias dcup="docker-compose up -d"
+alias dcups="docker-compose up -d && bundle exec rails s"
 alias dcd="docker-compose down"
 alias yt="docker run --rm -u $(id -u):$(id -g) -v $PWD:/data vimagick/youtube-dl"
 dbash() { docker exec -i -t "$1" bash; }
@@ -68,6 +71,8 @@ dbash() { docker exec -i -t "$1" bash; }
 # Ruby aliases
 alias c="bundle exec rails c"
 alias s="bundle exec rails s"
+alias boe="bundle outdated --only-explicit"
+alias mrubocop="git diff --name-only | xargs rubocop"
 
 # PHP aliases
 alias phpunit="vendor/bin/phpunit"
