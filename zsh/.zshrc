@@ -66,7 +66,7 @@ alias dcup="docker-compose up -d"
 alias dcups="docker-compose up -d && bundle exec rails s"
 alias dcd="docker-compose down"
 alias yt="docker run --rm -u $(id -u):$(id -g) -v $PWD:/data vimagick/youtube-dl"
-dbash() { docker exec -i -t "$1" bash; }
+dbash() { docker exec -it "$1" /bin/bash; }
 
 # Ruby aliases
 alias c="bundle exec rails c"
