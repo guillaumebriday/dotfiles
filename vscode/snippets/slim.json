@@ -1,0 +1,9 @@
+{
+  "byebug": {
+    "prefix": "b",
+    "body": [
+      "- byebug"
+    ],
+    "description": "Print byebug."
+  }
+}
