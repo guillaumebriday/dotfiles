@@ -46,5 +46,11 @@
       "end"
     ],
     "description": "Print strong params method"
+  },
+
+  "add_column": {
+    "prefix": "add_column",
+    "body": "add_column :${1:table}, :${2:column}, :${3:string}",
+    "description": "add_column :table, :column, :type",
   }
 }
