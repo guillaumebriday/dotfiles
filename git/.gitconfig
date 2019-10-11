@@ -16,3 +16,5 @@
   diff = less -+FX
 [commit]
   verbose = true
+[diff]
+  noprefix = true
