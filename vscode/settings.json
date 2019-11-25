@@ -85,7 +85,8 @@
         "**/playbooks/**/*.yml": "ansible",
         "**/*ansible*/**/*.yml": "ansible",
         "**/vars/**/*.yml": "ansible",
-        "**/inventory/*/*": "ansible"
+        "**/inventory/*/*": "ansible",
+        "*.yml": "yaml"
     },
     "search.exclude": {
         "**/node_modules": true,
