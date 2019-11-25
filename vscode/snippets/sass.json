@@ -1,0 +1,9 @@
+{
+  "byebug": {
+    "prefix": "@a",
+    "body": [
+      "@apply "
+    ],
+    "description": "Print @apply."
+  }
+}
