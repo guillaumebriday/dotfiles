@@ -1,5 +1,6 @@
 tap 'caskroom/cask'
 tap 'caskroom/drivers'
+tap 'homebrew/cask-versions'
 
 # install packages
 brew 'ansible'
@@ -30,7 +31,7 @@ brew 'zsh-syntax-highlighting'
 brew 'zsh'
 
 # Casks
-cask 'alfred'
+cask 'alfred3'
 cask 'chromedriver'
 cask 'docker'
 cask 'dropbox'
