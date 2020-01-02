@@ -108,16 +108,10 @@
         "**/vendor/**": true,
         "**/storage/tmp/**": true
     },
-    "eslint.autoFixOnSave": true,
     "eslint.packageManager": "yarn",
-    "eslint.validate": [
-        {
-            "language": "vue",
-            "autoFix": true
-        },
-        {
-            "language": "javascript",
-            "autoFix": true
-        }
-    ]
+    "eslint.validate": ["vue", "javascript"],
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "gitlens.mode.active": "zen"
 }
