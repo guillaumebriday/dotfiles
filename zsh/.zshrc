@@ -85,3 +85,14 @@ source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Source zsh-syntax-highlighting
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+load-n() {
+  node_version=".node-version"
+
+  if [ -f "$node_version" ]; then
+    nvmrc_node_version=$(cat "${node_version}")
+    n "$nvmrc_node_version"
+  fi
+}
+
+load-n
