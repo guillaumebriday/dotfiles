@@ -86,6 +86,9 @@ source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 # Source zsh-syntax-highlighting
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+
+autoload -U add-zsh-hook
+
 load-n() {
   node_version=".node-version"
 
@@ -95,4 +98,5 @@ load-n() {
   fi
 }
 
+add-zsh-hook chpwd load-n
 load-n
