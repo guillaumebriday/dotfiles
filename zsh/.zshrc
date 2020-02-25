@@ -3,6 +3,7 @@ export LANG="en_US.UTF-8"
 export LANGUAGE="en_US.UTF-8"
 export LC_ALL="en_US.UTF-8"
 export EDITOR=vim
+export DISABLE_SPRING=true
 
 ZSH_THEME="robbyrussell"
 DEFAULT_USER="$USER"
@@ -85,7 +86,6 @@ source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Source zsh-syntax-highlighting
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
 
 autoload -U add-zsh-hook
 
