@@ -18,3 +18,5 @@
   verbose = true
 [diff]
   noprefix = true
+[protocol]
+  version = 2
