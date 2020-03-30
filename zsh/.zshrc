@@ -25,16 +25,16 @@ source $ZSH/oh-my-zsh.sh
 alias zshconfig="vim ~/.zshrc"
 alias cl="clear"
 alias sites="cd ~/Sites"
-alias weather='curl -s "wttr.in/lyon?lang=fr"'
+alias meteo='curl -s "wttr.in/lyon?lang=fr"'
 alias cask="brew cask"
 alias cat="ccat"
 alias mkdir="mkdir -p"
 alias f="open ."
-alias man="tldr"
 alias hostfile="sudo vim /etc/hosts"
 alias code="codium"
 alias yui="yarn upgrade-interactive --latest"
 alias please='sudo $(fc -ln -1)'
+alias covid='curl -s "https://corona-stats.online/france"'
 
 # Flush Directory Service cache
 alias flushdns="sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder"
