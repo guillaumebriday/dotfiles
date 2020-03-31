@@ -93,8 +93,12 @@ load-n() {
   node_version=".node-version"
 
   if [ -f "$node_version" ]; then
+    current_node_version=$(node -v)
     nvmrc_node_version=$(cat "${node_version}")
-    n "$nvmrc_node_version"
+
+    if [ "$current_node_version" != "v${nvmrc_node_version}" ]; then
+      n "$nvmrc_node_version"
+    fi
   fi
 }
 
