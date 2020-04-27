@@ -36,3 +36,5 @@ spec/test_files/
 ## Editors
 .vscode/
 .idea
+.rakeTasks
+.generators
