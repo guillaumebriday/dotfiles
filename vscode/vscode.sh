@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Configuration files
-find ~/dotfiles/vscode -name '*.json' | xargs -I file ln -fs file ~/Library/Application\ Support/VSCodium/User/
+find ~/dotfiles/vscode -name '*.json' -print0 | xargs -0 -I file ln -fs file ~/Library/Application\ Support/VSCodium/User/
 ln -fs ~/dotfiles/vscode/snippets/ ~/Library/Application\ Support/VSCodium/User
 
 # Packages
@@ -66,7 +66,7 @@ packages=(
   Zignd.html-css-class-completion
 )
 
-for package in ${packages[@]}
+for package in "${packages[@]}"
 do
-  code --install-extension $package
+  code --install-extension "$package"
 done

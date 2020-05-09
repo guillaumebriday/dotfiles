@@ -5,7 +5,7 @@ ln -fs ~/dotfiles/ruby/.gemrc ~/
 ln -fs ~/dotfiles/ruby/.irbrc ~/
 
 # Check for rvm
-if test ! $(which rvm)
+if test !"$(which rvm)"
 then
   echo "Installing rvm for you."
   curl -sSL https://rvm.io/mpapis.asc | gpg --import -
