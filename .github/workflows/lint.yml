@@ -3,11 +3,8 @@ name: Lint
 on: [push]
 
 jobs:
-  yamllint:
+  shellcheck:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
-      - uses: reviewdog/action-shellcheck@master
-        with:
-          path: "."
-          pattern: "*.sh"
+      - uses: bewuethr/shellcheck-action@v2
