@@ -91,11 +91,9 @@ $ zsh/zsh.sh
 
 ### iTerm2
 
-```bash
-$ iTerm2/iterm.sh
-```
+Navigate to the preferences window. Towards the bottom of the window you should see an option that says “Load preferences from a custom folder or URL”. Check this option.
 
-Once the theme is downloaded, you can modify your iTerm2 settings in the app.
+Browse to the folder `~/dotfiles/iTerm2`.
 
 ### VS Code
 
