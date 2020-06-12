@@ -5,6 +5,9 @@
   editor = vim
   excludesfile = ~/.gitignore_global
   autocrlf = input
+  ignorecase = false
+  untrackedCache = true
+  trustctime = false
 [pull]
   rebase = true
 [merge]
@@ -27,3 +30,6 @@
 
   # Clean merged branches
   sweep = !git branch --merged master | grep -v 'master$' | xargs git branch -d && git remote prune origin
+
+  # List contributors with number of commits
+  contributors = shortlog --summary --numbered
