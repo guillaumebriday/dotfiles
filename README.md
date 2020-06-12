@@ -41,6 +41,8 @@ $ find ~/dotfiles -name '*.sh' | xargs -I file chmod u+x file # Make sure you ca
 
 For exemple, open the `brew/Brewfile` and remove applications you don't want to install from the list.
 
+At the end of the installation, restart your computer.
+
 ## Installation
 
 ### Brew
