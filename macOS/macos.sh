@@ -13,10 +13,10 @@ sudo -v
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 # Turn off packet signing for SMB 2 and SMB 3 connections. https://support.apple.com/en-us/HT205926
-cp ~/dotfiles/macOS/nsmb.conf /etc/nsmb.conf
+sudo cp ~/dotfiles/macOS/nsmb.conf /etc/nsmb.conf
 
 # Enable open apps from unidentified developers
-spctl --master-disable
+sudo spctl --master-disable
 
 ###############################################################################
 # General UI/UX                                                               #
@@ -48,18 +48,22 @@ defaults write com.apple.systempreferences NSQuitAlwaysKeepsWindows -bool false
 ###############################################################################
 
 # Enable “natural” (Lion-style) scrolling
-defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
+defaults write NSGlobalDomain com.apple.swipescrolldirection -bool true
 
 # Enable full keyboard access for all controls
 # (e.g. enable Tab in modal dialogs)
 defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 
 # Use scroll gesture with the Ctrl (^) modifier key to zoom
-defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true
-defaults write com.apple.universalaccess HIDScrollZoomModifierMask -int 262144
+sudo defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true
+sudo defaults write com.apple.universalaccess HIDScrollZoomModifierMask -int 262144
 
 # Follow the keyboard focus while zoomed in
-defaults write com.apple.universalaccess closeViewZoomFollowsFocus -bool true
+sudo defaults write com.apple.universalaccess closeViewZoomFollowsFocus -bool true
+
+# Set a blazingly fast keyboard repeat rate
+defaults write NSGlobalDomain KeyRepeat -int 2
+defaults write NSGlobalDomain InitialKeyRepeat -int 15
 
 ###############################################################################
 # Screen                                                                      #
@@ -157,6 +161,9 @@ defaults write com.apple.dock mru-spaces -bool false
 
 # Make Dock icons of hidden applications translucent
 defaults write com.apple.dock showhidden -bool true
+
+# Don’t show recent applications in Dock
+defaults write com.apple.dock show-recents -bool false
 
 ###############################################################################
 # Safari & WebKit                                                             #
