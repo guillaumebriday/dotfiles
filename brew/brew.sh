@@ -1,10 +1,9 @@
 #!/usr/bin/env bash
 
 # Check for Homebrew
-if test !"$(which brew)"
-then
+if ! hash brew 2>/dev/null; then
   echo "Installing Homebrew for you."
-  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  sh -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 fi
 
 # Make sure we’re using the latest Homebrew.
