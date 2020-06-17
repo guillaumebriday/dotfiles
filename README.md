@@ -91,6 +91,8 @@ $ ssh/ssh.sh
 $ zsh/zsh.sh
 ```
 
+Then complete the [n](https://github.com/tj/n#installation) installation for `sudo` privileges.
+
 ### iTerm2
 
 Navigate to the preferences window. Towards the bottom of the window you should see an option that says “Load preferences from a custom folder or URL”. Check this option.
