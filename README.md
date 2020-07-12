@@ -94,9 +94,11 @@ $ ruby/rvm.sh
 
 ### iTerm2
 
-Navigate to the preferences window. Towards the bottom of the window you should see an option that says “Load preferences from a custom folder or URL”. Check this option.
+Close iTerm2 before running this command:
 
-Browse to the folder `~/dotfiles/iTerm2`.
+```bash
+$ ssh/iTerm2.sh
+```
 
 ### VS Code
 
