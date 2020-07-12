@@ -32,8 +32,7 @@ Clone the project in your home directory :
 ```bash
 $ cd ~
 $ xcode-select --install
-$ git clone https://github.com/guillaumebriday/dotfiles.git
-$ cd dotfiles
+$ git clone https://github.com/guillaumebriday/dotfiles.git && cd dotfiles
 $ find ~/dotfiles -name '*.sh' | xargs -I file chmod u+x file # Make sure you can execute the scripts
 ```
 
