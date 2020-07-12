@@ -52,14 +52,6 @@ Packages and applications are installed with [https://brew.sh/](https://brew.sh/
 $ brew/brew.sh
 ```
 
-### RVM
-
-Ruby is manage with [https://rvm.io](https://rvm.io).
-
-```bash
-$ ruby/rvm.sh
-```
-
 ### Sensible macOS defaults
 
 ```bash
@@ -91,6 +83,14 @@ $ zsh/zsh.sh
 ```
 
 Then complete the [n](https://github.com/tj/n#installation) installation for `sudo` privileges.
+
+### RVM
+
+Ruby is manage with [https://rvm.io](https://rvm.io).
+
+```bash
+$ ruby/rvm.sh
+```
 
 ### iTerm2
 
