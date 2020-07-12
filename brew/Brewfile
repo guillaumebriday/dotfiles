@@ -3,7 +3,6 @@ brew 'ansible'
 brew 'ccat'
 brew 'composer'
 brew 'coreutils'
-brew 'discord'
 brew 'ffmpeg'
 brew 'git-extras'
 brew 'git-open'
@@ -12,8 +11,6 @@ brew 'git'
 brew 'gnupg'
 brew 'guetzli'
 brew 'htop'
-brew 'mas'
-brew 'mattermost'
 brew 'n'
 brew 'php'
 brew 'postgresql'
@@ -29,6 +26,8 @@ brew 'zsh'
 
 # Casks
 cask 'alfred3'
+cask 'discord'
+cask 'mattermost'
 cask 'chromedriver'
 cask 'docker'
 cask 'dropbox'
@@ -56,16 +55,3 @@ cask 'qlstephen'
 cask 'quicklook-csv'
 cask 'quicklook-json'
 cask 'webpquicklook'
-
-# Mas
-mas "1Password", id: 443987910
-mas "iStat Menus", id: 1319778037
-mas "Keynote", id: 409183694
-mas "Magnet", id: 441258766
-mas "Numbers", id: 409203825
-mas "Pages", id: 409201541
-mas "Reeder", id: 1449412482
-mas "Slack", id: 803453959
-mas "Telegram", id: 747648890
-mas "TheUnarchiver", id: 425424353
-mas "Tweetbot", id: 1384080005
