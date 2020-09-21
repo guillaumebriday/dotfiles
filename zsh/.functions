@@ -1,0 +1,43 @@
+# Global functions
+digga () {
+  dig +nocmd "$1" any +multiline +noall +answer
+}
+
+meteo () {
+  city="$1"
+
+  if [ -z "$city" ]; then
+    city="lyon"
+  fi
+
+  curl -s "http://wttr.in/${city}?lang=fr"
+}
+
+# Node functions
+autoload -U add-zsh-hook
+
+load-n() {
+  node_version=".node-version"
+
+  if [ -f "$node_version" ]; then
+    current_node_version=$(node -v)
+    nvmrc_node_version=$(cat "${node_version}")
+
+    if [ "$current_node_version" != "v${nvmrc_node_version}" ]; then
+      n "$nvmrc_node_version"
+    fi
+  fi
+}
+
+add-zsh-hook chpwd load-n
+load-n
+
+# Docker functions
+dbash () { docker exec -it "$1" /bin/bash; }
+
+# Git functions
+clone () {
+  basename=$(basename $1 .git)
+
+  git clone $1 && cd $basename
+}

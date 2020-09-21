@@ -1,0 +1,58 @@
+# Global aliases
+alias zshconfig="vim ~/.zshrc"
+alias cl="clear"
+alias sites="cd ~/Sites"
+alias cask="brew cask"
+alias cat="ccat"
+alias mkdir="mkdir -p"
+alias f="open ."
+alias yh="yarn hot"
+alias hostfile="sudo vim /etc/hosts"
+alias code="codium"
+alias yui="yarn upgrade-interactive --latest"
+alias please='sudo $(fc -ln -1)'
+alias covid='curl -s "https://corona-stats.online/france"'
+
+# Flush Directory Service cache
+alias flushdns="sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder"
+
+# Git aliases
+alias gau="git add -u"
+alias gd.="git diff --color-words=."
+alias gst="clear && git status"
+alias gs="gst"
+alias gsu="clear && git status -u"
+alias nah="git reset --hard HEAD && git clean -fd"
+alias undo="git reset HEAD\^"
+alias wip='git add -A; git rm $(git ls-files --deleted) 2> /dev/null; git commit --no-verify -m "--wip-- [skip ci]"'
+alias go="git open"
+alias tigd="tig master..HEAD --first-parent --no-merges"
+alias gdc="git diff --cached"
+
+# Vagrant aliases
+alias vd="vagrant destroy"
+alias vgs="vagrant global-status"
+alias vh="vagrant halt"
+alias vp="vagrant provision"
+alias vs="vagrant status"
+alias vu="vagrant up"
+
+# Docker aliases
+alias dps="docker ps"
+alias dc="docker-compose"
+alias dcup="docker-compose up -d"
+alias dcups="docker-compose up -d && bundle exec rails s"
+alias dcd="docker-compose down"
+alias yt="docker run --rm -u $(id -u):$(id -g) -v $PWD:/data vimagick/youtube-dl"
+
+# Ruby aliases
+alias c="bundle exec rails c"
+alias s="bundle exec rails s"
+alias boe="bundle outdated --only-explicit"
+alias mrubocop="git diff --name-only -- '*.rb' | xargs rubocop"
+
+# PHP aliases
+alias phpunit="vendor/bin/phpunit"
+alias phpcs="vendor/bin/php-cs-fixer"
+alias artisan="php artisan"
+alias mfs="php artisan migrate:fresh --seed"
