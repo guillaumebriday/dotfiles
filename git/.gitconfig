@@ -10,6 +10,8 @@
   trustctime = false
 [pull]
   rebase = true
+[push]
+  default = current
 [merge]
   ff = false
 [color]
@@ -33,3 +35,6 @@
 
   # List contributors with number of commits
   contributors = shortlog --summary --numbered
+
+  # List last branches
+  wip = for-each-ref --sort='-authordate:iso8601' --count 5  --format=' %(color:green)%(authordate:relative)%09%(color:white)%(refname:short)' refs/heads --no-merged
