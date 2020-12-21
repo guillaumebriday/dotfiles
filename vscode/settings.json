@@ -113,5 +113,6 @@
     "editor.codeActionsOnSave": {
         "source.fixAll.eslint": true
     },
-    "gitlens.mode.active": "zen"
+    "gitlens.mode.active": "zen",
+    "terminal.integrated.shell.osx": "/bin/zsh"
 }
