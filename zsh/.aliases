@@ -50,6 +50,7 @@ alias c="bundle exec rails c"
 alias s="bundle exec rails s"
 alias boe="bundle outdated --only-explicit"
 alias mrubocop="git diff --name-only -- '*.rb' | xargs rubocop"
+alias rao="bundle exec rubocop --auto-correct --only $1"
 
 # PHP aliases
 alias phpunit="vendor/bin/phpunit"

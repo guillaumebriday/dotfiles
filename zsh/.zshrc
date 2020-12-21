@@ -3,7 +3,6 @@ export LANG="en_US.UTF-8"
 export LANGUAGE="en_US.UTF-8"
 export LC_ALL="en_US.UTF-8"
 export EDITOR=vim
-export DISABLE_SPRING=true
 export GATSBY_TELEMETRY_DISABLED=1
 export ZSH_DISABLE_COMPFIX=true
 
