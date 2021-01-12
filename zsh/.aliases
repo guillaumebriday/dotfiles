@@ -52,6 +52,8 @@ alias boe="bundle outdated --only-explicit"
 alias mrubocop="git diff --name-only -- '*.rb' | xargs rubocop"
 alias rao="bundle exec rubocop --auto-correct --only $1"
 alias install_ruby="rvm install `cat .ruby-version`"
+alias cpd="bundle exec cap production deploy"
+alias csd="bundle exec cap staging deploy"
 
 # PHP aliases
 alias phpunit="vendor/bin/phpunit"
