@@ -13,6 +13,12 @@ meteo () {
   curl -s "http://wttr.in/${city}?lang=fr"
 }
 
+install_ruby () {
+  if [ -f .ruby-version ]; then
+    rvm install "$(cat .ruby-version)"
+  fi
+}
+
 # Node functions
 autoload -U add-zsh-hook
 
