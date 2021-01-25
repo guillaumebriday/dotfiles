@@ -25,6 +25,8 @@
   noprefix = true
 [protocol]
   version = 2
+[rebase]
+  autoStash = true
 [alias]
   # Serve local repo. http://coderwall.com/p/eybtga
   # Then other can access via `git clone git://#{YOUR_IP_ADDRESS}/
