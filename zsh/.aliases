@@ -50,7 +50,7 @@ alias c="bundle exec rails c"
 alias s="bundle exec rails s"
 alias boe="bundle outdated --only-explicit"
 alias mrubocop="git diff --name-only -- '*.rb' | xargs rubocop"
-alias rao="bundle exec rubocop --auto-correct --only $1"
+alias rao="bundle exec rubocop -A --only $1"
 alias cpd="bundle exec cap production deploy"
 alias csd="bundle exec cap staging deploy"
 
