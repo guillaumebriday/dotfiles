@@ -97,7 +97,7 @@ $ ruby/rvm.sh
 Close iTerm2 before running this command:
 
 ```bash
-$ ssh/iTerm2.sh
+$ iTerm2/iterm.sh
 ```
 
 ### VS Code
