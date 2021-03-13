@@ -25,6 +25,14 @@ This is my dotfiles for my system customizations and to setup my development env
 + Arthur iTerm2 colors theme
 + VS Code configuration
 
+## Before starting on Apple M1 Chip
+
+```bash
+$ softwareupdate --install-rosetta
+```
+
+Find the Terminal app in your Finder, press `⌘ + i`, check `Open using Rosetta` and reopen the Terminal.
+
 ## How to use it ?
 
 Clone the project in your home directory :
@@ -111,7 +119,6 @@ Edit the file `/Applications/VSCodium.app/Contents/Resources/app/product.json` a
   "itemUrl": "https://marketplace.visualstudio.com/items"
 }
 ```
-
 
 ```bash
 $ vscode/vscode.sh
