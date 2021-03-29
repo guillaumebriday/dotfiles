@@ -15,7 +15,8 @@ vendor/
 ## Node
 node_modules/
 bower_components/
-.sass-cache
+.sass-cache/
+.husky/
 
 ## Ansible
 *.retry
