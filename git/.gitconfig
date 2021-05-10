@@ -33,7 +33,7 @@
   serve = !git daemon --reuseaddr --verbose  --base-path=. --export-all ./.git
 
   # Clean merged branches
-  sweep = !git branch --merged master | grep -v 'master$' | xargs git branch -d && git remote prune origin
+  sweep = !git branch --merged develop | grep -v 'develop$' | xargs git branch -d && git remote prune origin
 
   # List contributors with number of commits
   contributors = shortlog --summary --numbered
