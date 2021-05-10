@@ -18,15 +18,12 @@
     "files.trimTrailingWhitespace": true,
     "gitlens.codeLens.authors.enabled": false,
     "gitlens.codeLens.recentChange.enabled": false,
-    "markdown.extension.toc.githubCompatibility": true,
-    "markdown.extension.toc.levels": "2..6",
     "search.showLineNumbers": true,
     "search.useGlobalIgnoreFiles": true,
     "solargraph.checkGemVersion": false,
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
     "terminal.integrated.copyOnSelection": true,
-    "window.zoomLevel": 0,
     "workbench.colorTheme": "One Dark Pro",
     "workbench.editor.highlightModifiedTabs": true,
     "workbench.fontAliasing": "auto",
@@ -114,5 +111,10 @@
         "source.fixAll.eslint": true
     },
     "gitlens.mode.active": "zen",
-    "terminal.integrated.shell.osx": "/bin/zsh"
+    "terminal.integrated.shell.osx": "/bin/zsh",
+    "cSpell.userWords": [
+        "datetime",
+        "frontmatter",
+        "timeago"
+    ]
 }
