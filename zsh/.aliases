@@ -1,17 +1,19 @@
 # Global aliases
 alias zshconfig="vim ~/.zshrc"
-alias cl="clear"
 alias sites="cd ~/Sites"
-alias cask="brew cask"
 alias cat="ccat"
 alias mkdir="mkdir -p"
 alias f="open ."
 alias yh="yarn install && yarn hot"
+alias yd="yarn install && yarn dev"
+alias yl="yarn install && yarn lint"
 alias hostfile="sudo vim /etc/hosts"
 alias code="codium"
 alias yui="yarn upgrade-interactive --latest"
 alias please='sudo $(fc -ln -1)'
-alias covid='curl -s "https://corona-stats.online/france"'
+alias rubymine="open -na "RubyMine.app" --args \"$@\""
+alias tc="cd ~/Sites/timecop-api"
+
 
 # Flush Directory Service cache
 alias flushdns="sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder"
@@ -49,8 +51,8 @@ alias yt="docker run --rm -u $(id -u):$(id -g) -v $PWD:/data vimagick/youtube-dl
 alias c="bundle exec rails c"
 alias s="bundle exec rails s"
 alias boe="bundle outdated --only-explicit"
-alias mrubocop="git diff --name-only -- '*.rb' | xargs rubocop"
-alias rao="bundle exec rubocop -A --only $1"
+alias mrubocop="git diff --name-only -- '*.rb' | xargs bundle exec rubocop"
+alias rao="bundle exec rubocop -a --only $1"
 alias cpd="bundle exec cap production deploy"
 alias csd="bundle exec cap staging deploy"
 

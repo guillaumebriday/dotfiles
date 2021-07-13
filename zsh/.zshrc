@@ -7,11 +7,6 @@ export GATSBY_TELEMETRY_DISABLED=1
 export ZSH_DISABLE_COMPFIX=true
 export DISABLE_SPRING=true
 
-export PGHOST="127.0.0.1"
-export PGPORT="5432"
-export PGUSER="postgres"
-export PGPASSWORD="secret"
-
 ZSH_THEME="robbyrussell"
 DEFAULT_USER="$USER"
 
