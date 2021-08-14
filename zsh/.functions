@@ -43,7 +43,12 @@ dbash () { docker exec -it "$1" /bin/bash; }
 
 # Git functions
 clone () {
-  basename=$(basename $1 .git)
+  basename=$(basename "$1" .git)
 
-  git clone $1 && cd $basename
+  git clone "$1" && (cd "$basename" || return)
+}
+
+# Clean merged branches
+sweep () {
+  git branch --merged "$(git_main_branch)" | grep -v "$(git_main_branch)$" | xargs git branch -d && git remote prune origin
 }
