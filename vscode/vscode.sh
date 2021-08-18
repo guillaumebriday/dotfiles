@@ -71,5 +71,5 @@ packages=(
 
 for package in "${packages[@]}"
 do
-  code --install-extension "$package"
+  codium --install-extension "$package"
 done
