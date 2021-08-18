@@ -1,3 +1,5 @@
+tap 'stripe/stripe-cli'
+
 # install packages
 brew 'ansible'
 brew 'ccat'
