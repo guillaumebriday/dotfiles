@@ -11,7 +11,7 @@ This is my dotfiles for my system customizations and to setup my development env
 + Homebrew
   + Installs Homebrew AND brew install's all of my favourite packages
   + Uses homebrew-cask to install all my applications
-+ RVM
++ rbenv
 + macOS
   + Installs applications via the Mac App Store
 + Git
@@ -92,12 +92,12 @@ $ zsh/zsh.sh
 
 Then complete the [n](https://github.com/tj/n#installation) installation for `sudo` privileges.
 
-### RVM
+### rbenv
 
-Ruby is manage with [https://rvm.io](https://rvm.io).
+Ruby is manage with [rbenv](https://github.com/rbenv/rbenv).
 
 ```bash
-$ ruby/rvm.sh
+$ ruby/rbenv.sh
 ```
 
 ### iTerm2
