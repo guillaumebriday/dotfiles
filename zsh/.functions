@@ -43,9 +43,9 @@ dbash () { docker exec -it "$1" /bin/bash; }
 
 # Git functions
 clone () {
-  basename=$(basename "$1" .git)
+  basename=$(basename $1 .git)
 
-  git clone "$1" && (cd "$basename" || return)
+  git clone $1 && cd $basename
 }
 
 # Clean merged branches
