@@ -11,7 +11,7 @@ export DISABLE_BETTER_ERRORS=true
 ZSH_THEME="robbyrussell"
 DEFAULT_USER="$USER"
 
-plugins=(git rails bundler osx docker)
+plugins=(git rails bundler osx docker yarn)
 
 # User configuration
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
