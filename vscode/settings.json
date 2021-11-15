@@ -118,5 +118,6 @@
         "prefetch",
         "sortablejs",
         "timeago"
-    ]
+    ],
+    "window.zoomLevel": 1
 }
