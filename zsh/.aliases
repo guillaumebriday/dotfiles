@@ -30,6 +30,7 @@ alias wip='git add -A; git rm $(git ls-files --deleted) 2> /dev/null; git commit
 alias go="git open"
 alias tigd="tig master..HEAD --first-parent --no-merges"
 alias gdc="git diff --cached"
+alias gw="git wip"
 
 # Vagrant aliases
 alias vd="vagrant destroy"
