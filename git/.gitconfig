@@ -36,4 +36,4 @@
   contributors = shortlog --summary --numbered
 
   # List last branches
-  wip = for-each-ref --sort='-authordate:iso8601' --count 10  --format=' %(color:green)%(authordate:relative)%09%(color:white)%(refname:short)' refs/heads --no-merged
+  wip = for-each-ref --sort='-authordate:iso8601' --count 20  --format=' %(color:green)%(authordate:relative)%09%(color:white)%(refname:short)' refs/heads --no-merged
