@@ -28,6 +28,9 @@
 [rebase]
   autoStash = true
 [alias]
+  amend = commit --amend --no-edit
+  edit = commit --amend --only
+
   # Serve local repo. http://coderwall.com/p/eybtga
   # Then other can access via `git clone git://#{YOUR_IP_ADDRESS}/
   serve = !git daemon --reuseaddr --verbose  --base-path=. --export-all ./.git
