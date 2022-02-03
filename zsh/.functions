@@ -19,6 +19,14 @@ install_ruby () {
   fi
 }
 
+path () {
+  echo $PATH | tr ':' '\n'
+}
+
+port () {
+  lsof -i"TCP:$1" -sTCP:LISTEN -n -P
+}
+
 # Node functions
 autoload -U add-zsh-hook
 

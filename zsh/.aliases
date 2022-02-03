@@ -4,16 +4,17 @@ alias sites="cd ~/Sites"
 alias cat="ccat"
 alias mkdir="mkdir -p"
 alias f="open ."
-alias yh="yarn install && yarn hot"
-alias yd="yarn install && yarn dev"
-alias yl="yarn install && yarn lint"
+alias yh="yarn install --silent --non-interactive && yarn hot"
+alias yd="yarn install --silent --non-interactive && yarn dev"
+alias yl="yarn install --silent --non-interactive && yarn lint"
 alias hostfile="sudo vim /etc/hosts"
 alias code="codium"
 alias yui="yarn upgrade-interactive --latest"
 alias please='sudo $(fc -ln -1)'
 alias rubymine="open -na "RubyMine.app" --args \"$@\""
 alias tc="cd ~/Sites/timecop-api"
-
+alias dotfiles="code ~/dotfiles"
+alias k="kill -9"
 
 # Flush Directory Service cache
 alias flushdns="sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder"
@@ -49,8 +50,8 @@ alias dcd="docker-compose down"
 alias yt="docker run --rm -u $(id -u):$(id -g) -v $PWD:/data vimagick/youtube-dl"
 
 # Ruby aliases
-alias c="bundle exec rails c"
-alias s="bundle install --jobs $(nproc) && yarn install && bundle exec rails s"
+alias c="bundle install --jobs $(nproc) --quiet && bundle exec rails c"
+alias s="echo 'Installing dependencies...' && bundle install --jobs $(nproc) --quiet && yarn install --silent --non-interactive && bundle exec rails s"
 alias boe="bundle outdated --only-explicit"
 alias mrubocop="git diff --name-only -- '*.rb' | xargs bundle exec rubocop"
 alias rao="bundle exec rubocop -a --only $1"
