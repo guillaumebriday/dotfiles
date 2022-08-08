@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
-mkdir ~/.ssh
+mkdir -p ~/.ssh
 cp ssh/config ~/.ssh/config
