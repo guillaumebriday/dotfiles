@@ -1,0 +1,22 @@
+# install packages
+brew 'ccat'
+brew 'cmake'
+brew 'coreutils'
+brew 'git-extras'
+brew 'git-open'
+brew 'git-recent'
+brew 'git'
+brew 'gnupg'
+brew 'htop'
+brew 'n'
+brew 'pkg-config'
+brew 'postgresql@14', link: true, restart_service: true
+brew 'rbenv'
+brew 'redis', link: true, restart_service: true
+brew 'shared-mime-info'
+brew 'tig'
+brew 'vim'
+brew 'yarn'
+brew 'zsh-autosuggestions'
+brew 'zsh-syntax-highlighting'
+brew 'zsh'

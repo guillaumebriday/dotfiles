@@ -17,7 +17,7 @@ DEFAULT_USER="$USER"
 plugins=(git rails bundler macos docker yarn)
 
 # User configuration
-export PATH="/usr/local/opt/openssl@1.1/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/.composer/vendor/bin"
+export PATH="/usr/local/opt/openssl@1.1/bin:/opt/homebrew/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/.composer/vendor/bin"
 
 # Load rbenv
 eval "$(rbenv init -)"

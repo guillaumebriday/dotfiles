@@ -12,7 +12,7 @@ brew update
 # Upgrade any already-installed formulae.
 brew upgrade
 
-brew bundle --file=brew/Brewfile
+brew bundle --file=brew/Brewfile.core
 
 # Remove outdated versions from the cellar.
 brew cleanup

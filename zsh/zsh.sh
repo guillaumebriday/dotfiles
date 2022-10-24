@@ -4,7 +4,7 @@
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # Configuration files
-ln -fs ~/dotfiles/zsh/.zshrc ~/
+ln -fs ~/dotfiles/zsh/.{zshrc,zprofile} ~/
 
 # If you want to hide the last login banner on logging
 touch ~/.hushlogin

@@ -60,6 +60,16 @@ Packages and applications are installed with [https://brew.sh/](https://brew.sh/
 $ brew/brew.sh
 ```
 
+It will only install important packages.
+
+### ZSH
+
+```bash
+$ zsh/zsh.sh
+```
+
+Then complete the [n](https://github.com/tj/n#installation) installation for `sudo` privileges.
+
 ### Sensible macOS defaults
 
 ```bash
@@ -84,13 +94,12 @@ $ vim/vim.sh
 $ ssh/ssh.sh
 ```
 
-### ZSH
-
+And create an SSH key:
 ```bash
-$ zsh/zsh.sh
+$ ssh-keygen -t ed25519 -C "your_email@example.com"
+$ eval "$(ssh-agent -s)"
+$ ssh-add --apple-use-keychain ~/.ssh/id_ed25519
 ```
-
-Then complete the [n](https://github.com/tj/n#installation) installation for `sudo` privileges.
 
 ### rbenv
 
@@ -106,6 +115,12 @@ Close iTerm2 before running this command:
 
 ```bash
 $ iTerm2/iterm.sh
+```
+
+### Install all applications
+
+```bash
+$ brew bundle --file=brew/Brewfile
 ```
 
 ### VS Code
