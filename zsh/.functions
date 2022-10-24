@@ -60,3 +60,13 @@ clone () {
 sweep () {
   git branch --merged "$(git_main_branch)" | grep -v "$(git_main_branch)$" | xargs git branch -d && git remote prune origin
 }
+
+# Rails
+prepare_rails () {
+  echo 'Installing dependencies...'
+  bundle install --jobs $(sysctl -n hw.logicalcpu) --quiet
+  yarn install --silent --non-interactive
+
+  echo 'Removing assets & cache...'
+  rm -rf public/assets tmp/cache 2> /dev/null
+}

@@ -9,6 +9,7 @@ export DISABLE_SPRING=true
 export DISABLE_BETTER_ERRORS=true
 export DISABLE_RACK_MINI_PROFILER=true
 export HOMEBREW_NO_AUTO_UPDATE=true
+export HOMEBREW_NO_INSTALL_CLEANUP=true
 
 ZSH_THEME="robbyrussell"
 DEFAULT_USER="$USER"
@@ -16,10 +17,7 @@ DEFAULT_USER="$USER"
 plugins=(git rails bundler macos docker yarn)
 
 # User configuration
-export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/opt/openssl@1.1/bin"
-
-# Add composer to PATH for scripting.
-export PATH="$PATH:$HOME/.composer/vendor/bin"
+export PATH="/usr/local/opt/openssl@1.1/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/.composer/vendor/bin"
 
 # Load rbenv
 eval "$(rbenv init -)"
@@ -27,10 +25,10 @@ eval "$(rbenv init -)"
 source $ZSH/oh-my-zsh.sh
 
 # Source zsh-autosuggestions
-source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $HOMEBREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Source zsh-syntax-highlighting
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $HOMEBREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Source aliases and functions:
 for file in ~/dotfiles/zsh/.{aliases,functions}; do

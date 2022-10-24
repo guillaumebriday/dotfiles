@@ -16,11 +16,9 @@
     "files.defaultLanguage": "markdown",
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
-    "gitlens.codeLens.authors.enabled": false,
-    "gitlens.codeLens.recentChange.enabled": false,
     "search.showLineNumbers": true,
     "search.useGlobalIgnoreFiles": true,
-    "solargraph.checkGemVersion": false,
+    "git.mergeEditor": false,
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
     "terminal.integrated.copyOnSelection": true,
@@ -83,7 +81,8 @@
         "**/*ansible*/**/*.yml": "ansible",
         "**/vars/**/*.yml": "ansible",
         "**/inventory/*/*": "ansible",
-        "*.yml": "yaml"
+        "*.yml": "yaml",
+        "*.sass": "scss"
     },
     "search.exclude": {
         "**/node_modules": true,
@@ -119,5 +118,7 @@
         "sortablejs",
         "timeago"
     ],
-    "window.zoomLevel": 1
+    "bracketPairColorizer.depreciation-notice": false,
+    "redhat.telemetry.enabled": false,
+    "workbench.editor.untitled.hint": "hidden"
 }

@@ -14,7 +14,9 @@ alias please='sudo $(fc -ln -1)'
 alias rubymine="open -na "RubyMine.app" --args \"$@\""
 alias tc="cd ~/Sites/timecop-api"
 alias dotfiles="code ~/dotfiles"
-alias k="kill -9"
+alias kill_rails="lsof -i 'TCP:3000' -sTCP:LISTEN -t | xargs kill -9"
+alias pa="cd ~/Sites/perangusta"
+alias wiki="cd ~/Sites/wiki"
 
 # Flush Directory Service cache
 alias flushdns="sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder"
@@ -32,6 +34,7 @@ alias go="git open"
 alias tigd="tig master..HEAD --first-parent --no-merges"
 alias gdc="git diff --cached"
 alias gw="git wip"
+alias gcdl="git checkout develop && git pull"
 
 # Vagrant aliases
 alias vd="vagrant destroy"
@@ -50,13 +53,12 @@ alias dcd="docker-compose down"
 alias yt="docker run --rm -u $(id -u):$(id -g) -v $PWD:/data vimagick/youtube-dl"
 
 # Ruby aliases
-alias c="bundle install --jobs $(nproc) --quiet && bundle exec rails c"
-alias s="echo 'Installing dependencies...' && bundle install --jobs $(nproc) --quiet && yarn install --silent --non-interactive && bundle exec rails s"
+alias c="prepare_rails && bundle exec rails c"
+alias s="prepare_rails && bundle exec rails s"
 alias boe="bundle outdated --only-explicit"
 alias mrubocop="git diff --name-only -- '*.rb' | xargs bundle exec rubocop"
 alias rao="bundle exec rubocop -a --only $1"
-alias cpd="bundle exec cap production deploy"
-alias csd="bundle exec cap staging deploy"
+alias srspec="SELENIUM_CHROME_HEADLESS_MODE=disabled bundle exec rspec"
 
 # PHP aliases
 alias phpunit="vendor/bin/phpunit"

@@ -12,6 +12,7 @@
   rebase = true
 [push]
   default = current
+  autoSetupRemote = true
 [merge]
   ff = false
 [color]
