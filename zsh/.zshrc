@@ -31,6 +31,6 @@ source $HOMEBREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $HOMEBREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Source aliases and functions:
-for file in ~/dotfiles/zsh/.{aliases,functions}; do
+for file in ~/dotfiles/zsh/.{aliases,functions,hidden}; do
   [ -r "$file" ] && [ -f "$file" ] && source "$file"
 done
