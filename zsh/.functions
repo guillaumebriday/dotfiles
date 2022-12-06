@@ -15,7 +15,7 @@ meteo () {
 
 install_ruby () {
   if [ -f .ruby-version ]; then
-    rvm install "$(cat .ruby-version)"
+    rbenv install "$(cat .ruby-version)"
   fi
 }
 
@@ -63,9 +63,14 @@ sweep () {
 
 # Rails
 prepare_rails () {
+  cd .
+
   echo 'Installing dependencies...'
   bundle install --jobs $(sysctl -n hw.logicalcpu) --quiet
-  yarn install --silent --non-interactive
+
+  if [ -f package.json ]; then
+    yarn install --silent --non-interactive
+  fi
 
   echo 'Removing assets & cache...'
   rm -rf public/assets tmp/cache 2> /dev/null
