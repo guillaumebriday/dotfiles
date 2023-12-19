@@ -4,7 +4,6 @@ alias sites="cd ~/Sites"
 alias cat="ccat"
 alias mkdir="mkdir -p"
 alias f="open ."
-alias yh="yarn install --silent --non-interactive && yarn hot"
 alias yd="yarn install --silent --non-interactive && yarn dev"
 alias yl="yarn install --silent --non-interactive && yarn lint"
 alias hostfile="sudo vim /etc/hosts"
@@ -35,29 +34,16 @@ alias tigd="tig master..HEAD --first-parent --no-merges"
 alias gdc="git diff --cached"
 alias gw="git wip"
 alias gcdl="git checkout develop && git pull"
-
-# Vagrant aliases
-alias vd="vagrant destroy"
-alias vgs="vagrant global-status"
-alias vh="vagrant halt"
-alias vp="vagrant provision"
-alias vs="vagrant status"
-alias vu="vagrant up"
-
-# Docker aliases
-alias dps="docker ps"
-alias dc="docker-compose"
-alias dcup="docker-compose up -d"
-alias dcups="docker-compose up -d && bundle exec rails s"
-alias dcd="docker-compose down"
-alias yt="docker run --rm -u $(id -u):$(id -g) -v $PWD:/data vimagick/youtube-dl"
+alias gcml="git checkout master && git pull"
 
 # Ruby aliases
 alias c="prepare_rails && bundle exec rails c"
 alias s="prepare_rails && bundle exec rails s"
+alias rrg="bundle exec rails routes -g"
 alias boe="bundle outdated --only-explicit"
 alias mrubocop="git diff --name-only -- '*.rb' | xargs bundle exec rubocop"
 alias rao="bundle exec rubocop -a --only $1"
+alias rAo="bundle exec rubocop -A --only $1"
 alias srspec="SELENIUM_CHROME_HEADLESS_MODE=disabled bundle exec rspec"
 
 # PHP aliases

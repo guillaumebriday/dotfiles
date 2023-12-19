@@ -1,28 +1,9 @@
 # Global functions
-digga () {
-  dig +nocmd "$1" any +multiline +noall +answer
-}
-
-meteo () {
-  city="$1"
-
-  if [ -z "$city" ]; then
-    city="lyon"
-  fi
-
-  curl -s "http://wttr.in/${city}?lang=fr"
-}
-
-install_ruby () {
-  if [ -f .ruby-version ]; then
-    rbenv install "$(cat .ruby-version)"
-  fi
-}
-
 path () {
   echo $PATH | tr ':' '\n'
 }
 
+# Example: port 3000
 port () {
   lsof -i"TCP:$1" -sTCP:LISTEN -n -P
 }
@@ -46,9 +27,6 @@ load-n() {
 add-zsh-hook chpwd load-n
 load-n
 
-# Docker functions
-dbash () { docker exec -it "$1" /bin/bash; }
-
 # Git functions
 clone () {
   basename=$(basename $1 .git)
@@ -61,15 +39,14 @@ sweep () {
   git branch --merged "$(git_main_branch)" | grep -v "$(git_main_branch)$" | xargs git branch -d && git remote prune origin
 }
 
-# Rails
 prepare_rails () {
-  cd .
+  cd . # Change Node and Ruby version if needed
 
   echo 'Installing dependencies...'
-  bundle install --jobs $(sysctl -n hw.logicalcpu) --quiet
+  bundle install --quiet
 
   if [ -f package.json ]; then
-    yarn install --silent --non-interactive
+    yarn install --silent --non-interactive --ignore-engines
   fi
 
   echo 'Removing assets & cache...'
