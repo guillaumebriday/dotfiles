@@ -1,6 +1,6 @@
 [user]
   name = Guillaume Briday
-  email = guillaumebriday@gmail.com
+  email = guillaume.briday@per-angusta.com
 [core]
   editor = vim
   excludesfile = ~/.gitignore_global
@@ -29,6 +29,7 @@
 [rebase]
   autoStash = true
 [alias]
+  ac = !git add . && git commit -m
   amend = commit --amend --no-edit
   edit = commit --amend --only
 
@@ -40,4 +41,4 @@
   contributors = shortlog --summary --numbered --no-merges
 
   # List last branches
-  wip = for-each-ref --sort='-authordate:iso8601' --count 20  --format=' %(color:green)%(authordate:relative)%09%(color:white)%(refname:short)' refs/heads --no-merged
+  wip = for-each-ref --sort='-authordate:iso8601' --count 40  --format=' %(color:green)%(authordate:relative)%09%(color:white)%(refname:short)' refs/heads --no-merged
