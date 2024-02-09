@@ -5,12 +5,13 @@ db/*.sqlite3
 ## Environment normalization:
 /.bundle
 
-## Php
+## PHP
 .php_cs.cache
 vendor/
 
 ## Ruby
 .byebug_history
+config/master.key
 
 ## Node
 node_modules/
@@ -33,9 +34,21 @@ hosts
 
 ## Rspec
 spec/test_files/
+/coverage/
 
 ## Editors
 .vscode/
 .idea
 .rakeTasks
 .generators
+
+## Env
+.env
+.env*.local
+
+## Ignore precompiled assets
+/public/packs
+/public/packs-test
+/public/assets
+/app/assets/builds/*
+!/app/assets/builds/.keep

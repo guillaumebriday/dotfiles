@@ -1,6 +1,8 @@
 [user]
   name = Guillaume Briday
   email = guillaume.briday@per-angusta.com
+[init]
+  defaultBranch = main
 [core]
   editor = vim
   excludesfile = ~/.gitignore_global
