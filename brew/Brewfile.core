@@ -8,10 +8,8 @@ brew 'git-recent'
 brew 'git'
 brew 'gnupg'
 brew 'htop'
-brew 'n'
 brew 'pkg-config'
-brew 'postgresql@14', link: true, restart_service: true
-brew 'rbenv'
+brew 'postgresql@16', link: true, restart_service: true
 brew 'redis', link: true, restart_service: true
 brew 'shared-mime-info'
 brew 'tig'

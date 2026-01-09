@@ -26,8 +26,9 @@ hosts
 ## Vagrant
 .vagrant/
 
-## macOS
+## macOS/Linux
 *.DS_Store
+.bash_history
 
 ## Logs
 *.log
@@ -41,10 +42,12 @@ spec/test_files/
 .idea
 .rakeTasks
 .generators
+.config/psysh/psysh_history
 
 ## Env
 .env
 .env*.local
+.env.docker
 
 ## Ignore precompiled assets
 /public/packs

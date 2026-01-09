@@ -16,3 +16,6 @@ brew bundle --file=brew/Brewfile.core
 
 # Remove outdated versions from the cellar.
 brew cleanup
+
+# Install mise
+curl https://mise.run | sh
