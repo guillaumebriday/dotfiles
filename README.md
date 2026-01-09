@@ -1,10 +1,6 @@
 # dotfiles
 
-![](https://github.com/guillaumebriday/dotfiles/workflows/Lint/badge.svg)
-
 This is my dotfiles for my system customizations and to setup my development environment.
-
-![Screenshot](https://raw.githubusercontent.com/guillaumebriday/dotfiles/master/screenshot.png)
 
 ## What's included ?
 
