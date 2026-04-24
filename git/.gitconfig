@@ -34,6 +34,7 @@
   ac = !git add . && git commit -m
   amend = commit --amend --no-edit
   edit = commit --amend --only
+  pushci = "!f() { git push \"$@\" && bin/ci_local; }; f"
 
   # Serve local repo. http://coderwall.com/p/eybtga
   # Then other can access via `git clone git://#{YOUR_IP_ADDRESS}/
@@ -41,6 +42,3 @@
 
   # List contributors with number of commits
   contributors = shortlog --summary --numbered --no-merges
-
-  # List last branches
-  wip = for-each-ref --sort='-authordate:iso8601' --count 40  --format=' %(color:green)%(authordate:relative)%09%(color:white)%(refname:short)' refs/heads --no-merged

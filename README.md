@@ -1,11 +1,11 @@
 # dotfiles
 
-This is my dotfiles for my system customizations and to setup my development environment.
+These are my dotfiles for my system customizations and to setup my development environment.
 
-## What's included ?
+## What's included?
 
 + Homebrew
-  + Installs Homebrew AND brew install's all of my favourite packages
+  + Installs Homebrew AND brew installs all of my favourite packages
   + Uses homebrew-cask to install all my applications
 + mise
 + macOS
@@ -20,7 +20,7 @@ This is my dotfiles for my system customizations and to setup my development env
   + Aliases
 + Arthur iTerm2 colors theme
 
-## How to use it ?
+## How to use it?
 
 Clone the project in your home directory :
 
@@ -33,7 +33,7 @@ $ find ~/dotfiles -name '*.sh' | xargs -I file chmod u+x file # Make sure you ca
 
 **Before running any commands, you must edit files according to your needs.**
 
-For exemple, open the `brew/Brewfile` and remove applications you don't want to install from the list.
+For example, open the `brew/Brewfile` and remove applications you don't want to install from the list.
 
 At the end of the installation, restart your computer.
 
