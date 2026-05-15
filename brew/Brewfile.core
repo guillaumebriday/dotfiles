@@ -9,9 +9,10 @@ brew 'git'
 brew 'gnupg'
 brew 'htop'
 brew 'pkg-config'
-brew 'postgresql@16', link: true, restart_service: true
-brew 'redis', link: true, restart_service: true
+brew 'postgresql@16', link: true
+brew 'redis', link: true
 brew 'shared-mime-info'
+brew 'shellcheck'
 brew 'tig'
 brew 'vim'
 brew 'yarn'

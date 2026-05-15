@@ -39,12 +39,6 @@ At the end of the installation, restart your computer.
 
 ## Installation
 
-### Mise
-
-```bash
-$ curl https://mise.run | sh
-```
-
 ### Brew
 
 Packages and applications are installed with [https://brew.sh/](https://brew.sh/).

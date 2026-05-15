@@ -38,3 +38,9 @@ source $HOMEBREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 for file in ~/dotfiles/zsh/.{aliases,functions,hidden}; do
   [ -r "$file" ] && [ -f "$file" ] && source "$file"
 done
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/guillaume.briday/Sites/perangusta/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/guillaume.briday/Sites/perangusta/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/guillaume.briday/Sites/perangusta/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/guillaume.briday/Sites/perangusta/google-cloud-sdk/completion.zsh.inc'; fi

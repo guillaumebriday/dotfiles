@@ -9,13 +9,12 @@ alias yl="yarn install --silent && yarn lint"
 alias hostfile="sudo vim /etc/hosts"
 alias yui="yarn upgrade-interactive"
 alias please='sudo $(fc -ln -1)'
-alias rubymine="open -na "RubyMine.app" --args \"$@\""
 alias slog="cd ~/Sites/oxolyn-lab/slog-app"
 alias dotfiles="code ~/dotfiles"
 alias kill_rails="lsof -i 'TCP:3000' -sTCP:LISTEN -t | xargs kill -9"
+alias kill_sidekiq="pgrep -f sidekiq | xargs kill -9"
 alias pa="cd ~/Sites/perangusta"
 alias panop="cd ~/Sites/perangusta-panopticon"
-alias ca="claude"
 
 # Flush Directory Service cache
 alias flushdns="sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder"
@@ -42,6 +41,6 @@ alias gpb="git pushci"
 alias rrg="bundle exec rails routes -g"
 alias boe="bundle outdated --only-explicit"
 alias mrubocop="git diff --name-only -- '*.rb' | xargs bundle exec rubocop"
-alias rao="bundle exec rubocop -a --only $1"
-alias rAo="bundle exec rubocop -A --only $1"
+rao () { bundle exec rubocop -a --only "$1"; }
+rAo () { bundle exec rubocop -A --only "$1"; }
 alias srspec="SELENIUM_CHROME_HEADLESS_MODE=disabled bundle exec rspec"

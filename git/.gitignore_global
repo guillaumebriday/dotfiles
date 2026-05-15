@@ -55,3 +55,6 @@ spec/test_files/
 /public/assets
 /app/assets/builds/*
 !/app/assets/builds/.keep
+
+## Claude
+.claude/settings.local.json

@@ -1,6 +1,6 @@
 # Global functions
 path () {
-  echo $PATH | tr ':' '\n'
+  echo "$PATH" | tr ':' '\n'
 }
 
 # Example: port 3000
@@ -10,9 +10,9 @@ port () {
 
 # Git functions
 clone () {
-  basename=$(basename $1 .git)
+  basename=$(basename "$1" .git)
 
-  git clone $1 && cd $basename
+  git clone "$1" && cd "$basename" || return
 }
 
 # Clean merged branches
