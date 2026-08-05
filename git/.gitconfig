@@ -34,7 +34,23 @@
   ac = !git add . && git commit -m
   amend = commit --amend --no-edit
   edit = commit --amend --only
-  pushci = "!f() { git push \"$@\" && bin/ci_local; }; f"
+
+  # Unlock and remove the worktree holding a branch, so it can be checked out again
+  wtrm = "!f() { \
+    force=''; \
+    if [ \"$1\" = '-f' ] || [ \"$1\" = '--force' ]; then force='--force'; shift; fi; \
+    branch=\"${1:?usage: git wtrm [-f] <branch>}\"; \
+    git worktree prune; \
+    path=$(git worktree list --porcelain | awk -v ref=\"refs/heads/$branch\" '/^worktree /{p=substr($0, 10)} /^branch /{if (substr($0, 8) == ref) {print p; exit}}'); \
+    if [ -n \"$path\" ]; then \
+      git worktree unlock \"$path\" 2>/dev/null; \
+      git worktree remove $force \"$path\" || { echo \"Discard that work with: git wtrm -f $branch\"; exit 1; }; \
+      echo \"Removed worktree $path\"; \
+    else \
+      echo \"No worktree registered for $branch\"; \
+    fi; \
+    git checkout \"$branch\"; \
+  }; f"
 
   # Serve local repo. http://coderwall.com/p/eybtga
   # Then other can access via `git clone git://#{YOUR_IP_ADDRESS}/
