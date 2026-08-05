@@ -8,6 +8,15 @@ port () {
   lsof -i"TCP:$1" -sTCP:LISTEN -n -P
 }
 
+fix () {
+  if [[ -z "$*" ]]; then
+    echo "usage: fix <url or description>" >&2
+    return 1
+  fi
+
+  claude "Do $* then /opening-pull-requests" -w
+}
+
 # Git functions
 clone () {
   basename=$(basename "$1" .git)
