@@ -15,6 +15,8 @@ These are my dotfiles for my system customizations and to setup my development e
   + Global gitignore
 + Vim config
 + SSH config
++ Hosts
+  + Blocks ads and trackers with the StevenBlack list, straight in `/etc/hosts`
 + Oh-My-Zsh
   + Robbyrussell theme
   + Aliases
@@ -91,6 +93,29 @@ $ ssh-add --apple-use-keychain ~/.ssh/id_ed25519
 ```bash
 $ ruby/ruby.sh
 ```
+
+### Hosts
+
+Symlinks `update-hosts` into `~/.local/bin`:
+
+```bash
+$ hosts/hosts.sh
+```
+
+It rewrites everything below the marker line in `/etc/hosts` with the [StevenBlack list](https://github.com/StevenBlack/hosts), so your own entries stay on top. Run it whenever you want a fresh list:
+
+```bash
+$ sudo update-hosts
+```
+
+To try it without touching the real file, point it somewhere else:
+
+```bash
+$ head -11 /etc/hosts > ~/hosts-preview
+$ HOSTS_FILE=~/hosts-preview update-hosts
+```
+
+Domains you want to keep working go in the `ALLOWED` list at the top of the script.
 
 ### iTerm2
 

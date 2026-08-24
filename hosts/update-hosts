@@ -1,0 +1,53 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+LIST_URL="https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling/hosts"
+HOSTS_FILE="${HOSTS_FILE:-/etc/hosts}"
+MARKER="# ==== BEGIN blocklist, everything below this line is generated ===="
+
+# Domains you want to keep working, even if the list blocks them
+export ALLOWED="
+mixpanel.com
+api.mixpanel.com
+api-js.mixpanel.com
+decide.mixpanel.com
+switchboard.mixpanel.com
+"
+
+tmp_list=$(mktemp)
+tmp_hosts=$(mktemp)
+trap 'rm -f "$tmp_list" "$tmp_hosts"' EXIT
+
+# Keep the blocked domains and the comments, drop the localhost entries, comment out the allowed ones
+curl -fsSL --max-time 60 "$LIST_URL" | awk '
+  BEGIN { split(ENVIRON["ALLOWED"], domains); for (i in domains) allowed[domains[i]] = 1 }
+  /^#/ || NF == 0 { print; next }
+  $1 == "0.0.0.0" && $2 != "0.0.0.0" {
+    if ($2 in allowed) print "#", $1, $2; else print $1, $2
+  }
+' > "$tmp_list"
+
+count=$(grep -c '^0\.0\.0\.0 ' "$tmp_list" || true)
+if [ "$count" -lt 1000 ]; then
+  echo "Got only $count entries, that does not look like the blocklist. Leaving $HOSTS_FILE alone." >&2
+  exit 1
+fi
+
+{
+  # Everything you wrote yourself, up to the marker
+  awk -v marker="$MARKER" '$0 == marker { exit } { print }' "$HOSTS_FILE"
+  echo "$MARKER"
+  echo "# Source: $LIST_URL"
+  cat "$tmp_list"
+} > "$tmp_hosts"
+
+cp "$tmp_hosts" "$HOSTS_FILE"
+chmod 644 "$HOSTS_FILE"
+
+# Flushing the DNS cache needs root, skip it when trying the script on a copy
+if [ "$(id -u)" -eq 0 ]; then
+  dscacheutil -flushcache
+  killall -HUP mDNSResponder
+fi
+
+echo "$count domains blocked."
