@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+set -euo pipefail
 
 # iTerm2 expands the tilde in this preference itself, so it must stay literal.
 # shellcheck disable=SC2088
