@@ -29,6 +29,7 @@ alias nah="git reset --hard HEAD && git clean -fd"
 alias undo="git reset HEAD\^"
 alias wip='git add -A; git rm $(git ls-files --deleted) 2> /dev/null; git commit --no-verify -m "--wip-- [skip ci]"'
 alias go="git open"
+alias pr="gh pr view --web"
 alias tigd="tig master..HEAD --first-parent --no-merges"
 alias gdc="git diff --cached"
 alias gw="git for-each-ref --sort='-authordate:iso8601' --count 40  --format=' %(color:green)%(authordate:relative)%09%(color:white)%(refname:short)' refs/heads --no-merged"
