@@ -1,7 +1,7 @@
 tap 'datadog-labs/pack'
 
 # install packages
-brew 'ccat'
+brew 'bat'
 brew 'cmake'
 brew 'coreutils'
 brew 'exiftool'

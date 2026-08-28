@@ -1,7 +1,7 @@
 # Global aliases
 alias zshconfig="vim ~/.zshrc"
 alias sites="cd ~/Sites"
-alias cat="ccat"
+alias cat="bat --style=plain --paging=never"
 alias mkdir="mkdir -p"
 alias f="open ."
 alias yd="yarn install --silent && yarn dev"
