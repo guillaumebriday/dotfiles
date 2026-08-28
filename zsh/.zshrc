@@ -20,8 +20,7 @@ plugins=(git rails bundler macos docker docker-compose yarn)
 # User configuration
 export PATH="/opt/homebrew/sbin:/opt/homebrew/opt/libpq/bin:/opt/homebrew/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/.composer/vendor/bin"
 export PATH="/opt/homebrew/opt/postgresql@16/bin:$PATH"
-export PATH="~/.local/bin:$PATH"
-export PATH="./vendor/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
 
 # Load mise
 eval "$(~/.local/bin/mise activate zsh)"

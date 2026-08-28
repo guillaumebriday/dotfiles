@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
 
 # install oh-my-zsh
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+if [ ! -d ~/.oh-my-zsh ]; then
+  sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+fi
 
 # Configuration files
 ln -fs ~/dotfiles/zsh/.{zshrc,zprofile} ~/
