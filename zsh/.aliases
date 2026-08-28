@@ -10,11 +10,13 @@ alias hostfile="sudo vim /etc/hosts"
 alias yui="yarn upgrade-interactive"
 alias please='sudo $(fc -ln -1)'
 alias slog="cd ~/Sites/oxolyn-lab/slog-app"
+alias atablo="cd ~/Sites/oxolyn-lab/atablo"
 alias dotfiles="code ~/dotfiles"
 alias kill_rails="lsof -i 'TCP:3000' -sTCP:LISTEN -t | xargs kill -9"
 alias kill_sidekiq="pgrep -f sidekiq | xargs kill -9"
 alias pa="cd ~/Sites/perangusta"
-alias panop="cd ~/Sites/perangusta-panopticon"
+alias panop="cd ~/Sites/panopticon"
+alias cw="claude --worktree"
 
 # Flush Directory Service cache
 alias flushdns="sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder"
