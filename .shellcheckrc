@@ -1,1 +1,2 @@
-disable=SC2088
+# Keep SC2088 (tilde does not expand in quotes) enabled: it catches real
+# dead PATH entries. Suppress it inline where a tool expands the tilde itself.
