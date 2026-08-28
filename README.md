@@ -24,13 +24,22 @@ These are my dotfiles for my system customizations and to setup my development e
 
 ## How to use it?
 
-Clone the project in your home directory :
+On a brand new machine, run the installer straight from GitHub:
+
+```bash
+$ curl -fsSL https://raw.githubusercontent.com/guillaumebriday/dotfiles/master/install.sh | bash
+```
+
+It asks which steps you want, installs the Command Line Tools if they are
+missing, clones this repo into `~/dotfiles` and installs from there.
+
+The scripts assume the repo lives in `~/dotfiles`, so clone it there when you do
+it by hand:
 
 ```bash
 $ cd ~
 $ xcode-select --install
 $ git clone https://github.com/guillaumebriday/dotfiles.git && cd dotfiles
-$ find ~/dotfiles -name '*.sh' | xargs -I file chmod u+x file # Make sure you can execute the scripts
 ```
 
 **Before running any commands, you must edit files according to your needs.**
@@ -40,6 +49,37 @@ For example, open the `brew/Brewfile` and remove applications you don't want to 
 At the end of the installation, restart your computer.
 
 ## Installation
+
+Run everything, in the right order:
+
+```bash
+$ ./install.sh
+```
+
+Every step is idempotent, so re-running it is safe, and only one install runs at
+a time. To replay a single step, pass its name (`./install.sh --help` lists them
+all):
+
+```bash
+$ ./install.sh git vim
+```
+
+Naming steps skips the questions. Piped from curl, they go after `-s --`:
+
+```bash
+$ curl -fsSL https://raw.githubusercontent.com/guillaumebriday/dotfiles/master/install.sh | bash -s -- git vim
+```
+
+`-i` asks which steps to run, which is what the curl one-liner does for you:
+
+```bash
+$ ./install.sh -i
+```
+
+If a step fails, the run stops there and says so, so you can fix it and resume
+from that step.
+
+The steps are also runnable on their own, as described below.
 
 ### Brew
 
