@@ -58,3 +58,4 @@ spec/test_files/
 
 ## Claude
 .claude/settings.local.json
+.claude/worktrees/
