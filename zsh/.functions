@@ -17,6 +17,11 @@ fix () {
   claude "Do $* then /opening-pull-requests" -w
 }
 
+# Example: yarn_run dev
+yarn_run () {
+  yarn install --silent && yarn "${1:-dev}"
+}
+
 # Git functions
 clone () {
   basename=$(basename "$1" .git)
@@ -24,9 +29,36 @@ clone () {
   git clone "$1" && cd "$basename" || return
 }
 
+# Check out a branch and pull it. Defaults to the main branch.
+# Example: gcpl develop
+gcpl () {
+  git checkout "${1:-$(git_main_branch)}" && git pull
+}
+
 # Clean merged branches
 sweep () {
   git branch --merged "$(git_main_branch)" | grep -v "$(git_main_branch)$" | xargs git branch -d && git remote prune origin
+}
+
+# Ruby functions
+# Example: rao Style/StringLiterals
+rao () {
+  if [[ -z "$1" ]]; then
+    echo "usage: rao <cop>" >&2
+    return 1
+  fi
+
+  bundle exec rubocop -a --only "$1"
+}
+
+# Example: rAo Style/StringLiterals
+rAo () {
+  if [[ -z "$1" ]]; then
+    echo "usage: rAo <cop>" >&2
+    return 1
+  fi
+
+  bundle exec rubocop -A --only "$1"
 }
 
 prepare_rails () {

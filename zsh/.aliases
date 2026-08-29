@@ -1,49 +1,54 @@
 # Global aliases
-alias zshconfig="vim ~/.zshrc"
-alias sites="cd ~/Sites"
+alias zshconfig='$EDITOR ~/.zshrc'
+alias hostfile='sudo $EDITOR /etc/hosts'
+alias dotfiles="code ~/dotfiles"
 alias cat="bat --style=plain --paging=never"
 alias mkdir="mkdir -p"
 alias f="open ."
-alias yd="yarn install --silent && yarn dev"
-alias yl="yarn install --silent && yarn lint"
-alias hostfile="sudo vim /etc/hosts"
-alias yui="yarn upgrade-interactive"
 alias please='sudo $(fc -ln -1)'
-alias slog="cd ~/Sites/oxolyn-lab/slog-app"
-alias atablo="cd ~/Sites/oxolyn-lab/atablo"
-alias dotfiles="code ~/dotfiles"
-alias kill_rails="lsof -i 'TCP:3000' -sTCP:LISTEN -t | xargs kill -9"
-alias kill_sidekiq="pgrep -f sidekiq | xargs kill -9"
+alias cw="claude --worktree"
+
+# Project directories
+alias sites="cd ~/Sites"
 alias pa="cd ~/Sites/perangusta"
 alias panop="cd ~/Sites/panopticon"
-alias cw="claude --worktree"
+alias slog="cd ~/Sites/oxolyn-lab/slog-app"
+alias atablo="cd ~/Sites/oxolyn-lab/atablo"
+
+# Yarn aliases
+alias yd="yarn_run dev"
+alias yl="yarn_run lint"
+alias yui="yarn upgrade-interactive"
+
+# Kill stray dev processes. TERM, not KILL, so Rails runs its shutdown hooks
+# and Sidekiq finishes in-flight jobs; reach for -9 by hand if one hangs.
+alias kill_rails="lsof -i 'TCP:3000' -sTCP:LISTEN -t | xargs kill"
+alias kill_sidekiq="pgrep -f '^(sidekiq|.*bundle exec sidekiq)' | xargs kill"
 
 # Flush Directory Service cache
 alias flushdns="sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder"
 
 # Git aliases
-alias gau="git add -u"
-alias gd.="git diff --color-words=."
 alias gst="clear && git status --untracked-files"
 alias gs="gst"
 alias gsu="clear && git status -u"
+alias gau="git add -u"
+alias gd.="git diff --color-words=."
+alias gdc="git diff --cached"
 alias nah="git reset --hard HEAD && git clean -fd"
-alias undo="git reset HEAD\^"
-alias wip='git add -A; git rm $(git ls-files --deleted) 2> /dev/null; git commit --no-verify -m "--wip-- [skip ci]"'
+alias undo='git reset HEAD^'
+alias wip='git add -A && git commit --no-verify -m "--wip-- [skip ci]"'
+alias amend="git add -A && git amend"
 alias go="git open"
 alias pr="gh pr view --web"
-alias tigd="tig master..HEAD --first-parent --no-merges"
-alias gdc="git diff --cached"
-alias gw="git for-each-ref --sort='-authordate:iso8601' --count 40  --format=' %(color:green)%(authordate:relative)%09%(color:white)%(refname:short)' refs/heads --no-merged"
+alias tigd='tig $(git_main_branch)..HEAD --first-parent --no-merges'
 alias gcdl="git checkout develop && git pull"
 alias gcml="git checkout master && git pull"
-alias amend="git add . && git amend"
 alias gpb="git pushci"
+alias gw="git for-each-ref --sort='-authordate:iso8601' --count 40  --format=' %(color:green)%(authordate:relative)%09%(color:white)%(refname:short)' refs/heads --no-merged"
 
 # Ruby aliases
 alias rrg="bundle exec rails routes -g"
 alias boe="bundle outdated --only-explicit"
-alias mrubocop="git diff --name-only -- '*.rb' | xargs bundle exec rubocop"
-rao () { bundle exec rubocop -a --only "$1"; }
-rAo () { bundle exec rubocop -A --only "$1"; }
+alias mrubocop="git diff --name-only --diff-filter=d HEAD -- '*.rb' | xargs bundle exec rubocop"
 alias srspec="SELENIUM_CHROME_HEADLESS_MODE=disabled bundle exec rspec"

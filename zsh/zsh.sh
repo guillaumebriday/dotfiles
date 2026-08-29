@@ -7,7 +7,7 @@ if [ ! -d ~/.oh-my-zsh ]; then
 fi
 
 # Configuration files
-ln -fs ~/dotfiles/zsh/.{zshrc,zprofile} ~/
+ln -fs ~/dotfiles/zsh/.{zshenv,zshrc,zprofile} ~/
 
 # If you want to hide the last login banner on logging
 touch ~/.hushlogin

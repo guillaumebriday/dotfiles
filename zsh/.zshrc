@@ -1,45 +1,48 @@
-export ZSH=~/.oh-my-zsh
-export LANG="en_US.UTF-8"
-export LANGUAGE="en_US.UTF-8"
-export LC_ALL="en_US.UTF-8"
-export EDITOR=vim
-export GATSBY_TELEMETRY_DISABLED=1
+# Interactive shell configuration. Environment variables live in .zshenv.
+
+export ZSH="$HOME/.oh-my-zsh"
 export ZSH_DISABLE_COMPFIX=true
-export DISABLE_BETTER_ERRORS=true
-export DISABLE_RACK_MINI_PROFILER=true
-export HOMEBREW_NO_AUTO_UPDATE=1
-export HOMEBREW_NO_INSTALL_CLEANUP=1
-export HOMEBREW_NO_ANALYTICS=1
-export HOMEBREW_NO_INSTALLED_DEPENDENTS_CHECK=1
 
 ZSH_THEME="robbyrussell"
-DEFAULT_USER="$USER"
 
 plugins=(git rails bundler macos docker docker-compose yarn)
 
+HISTSIZE=50000
+SAVEHIST=$HISTSIZE
+
 # User configuration
-export PATH="/opt/homebrew/sbin:/opt/homebrew/opt/libpq/bin:/opt/homebrew/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/.composer/vendor/bin"
-export PATH="/opt/homebrew/opt/postgresql@16/bin:$PATH"
-export PATH="$HOME/.local/bin:$PATH"
+# Extend the system PATH (/etc/paths and /etc/paths.d) instead of replacing it.
+# `typeset -U` keeps the first occurrence of each entry, so nested shells and
+# re-sourcing this file never duplicate anything.
+typeset -U PATH path
+path=(
+  "$HOME/.local/bin"
+  "$HOMEBREW_PREFIX/opt/postgresql@16/bin"
+  "$HOMEBREW_PREFIX/sbin"
+  "$HOMEBREW_PREFIX/opt/libpq/bin"
+  $path
+  "$HOME/.composer/vendor/bin"
+)
 
 # Load mise
-eval "$(~/.local/bin/mise activate zsh)"
+[ -x "$HOME/.local/bin/mise" ] && eval "$("$HOME/.local/bin/mise" activate zsh)"
 
 source $ZSH/oh-my-zsh.sh
 
-# Source zsh-autosuggestions
-source $HOMEBREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-
-# Source zsh-syntax-highlighting
-source $HOMEBREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# Source zsh-autosuggestions and zsh-syntax-highlighting. Guarded so a fresh
+# machine still gets a usable prompt before brew.sh has run.
+# Syntax highlighting has to come last, after everything that defines widgets.
+for plugin in zsh-autosuggestions zsh-syntax-highlighting; do
+  file="$HOMEBREW_PREFIX/share/$plugin/$plugin.zsh"
+  [ -r "$file" ] && source "$file"
+done
 
 # Source aliases and functions:
 for file in ~/dotfiles/zsh/.{aliases,functions,hidden}; do
-  [ -r "$file" ] && [ -f "$file" ] && source "$file"
+  [ -r "$file" ] && source "$file"
 done
 
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/guillaume.briday/Sites/perangusta/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/guillaume.briday/Sites/perangusta/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/guillaume.briday/Sites/perangusta/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/guillaume.briday/Sites/perangusta/google-cloud-sdk/completion.zsh.inc'; fi
+# Google Cloud SDK path and completion, installed by the gcloud-cli cask.
+for file in "$HOMEBREW_PREFIX"/share/google-cloud-sdk/{path,completion}.zsh.inc; do
+  [ -r "$file" ] && source "$file"
+done
