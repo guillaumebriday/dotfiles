@@ -89,7 +89,8 @@ Packages and applications are installed with [https://brew.sh/](https://brew.sh/
 brew/brew.sh
 ```
 
-It will only install important packages.
+It only installs the command line tools, from `brew/Brewfile.core`. The GUI
+applications live in `brew/Brewfile` and are a separate step, see below.
 
 ### ZSH
 
@@ -167,6 +168,12 @@ iTerm2/iterm.sh
 
 ### Install all applications
 
+The applications and casks in `brew/Brewfile`, kept apart from the command line
+tools so a machine can take one without the other:
+
 ```bash
-brew bundle --file=brew/Brewfile
+brew/apps.sh
 ```
+
+It trusts the taps the Brewfile declares first, otherwise Homebrew refuses to
+load casks coming from them.

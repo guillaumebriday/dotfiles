@@ -5,11 +5,12 @@ REPO=https://github.com/guillaumebriday/dotfiles.git
 LOCK=~/.dotfiles-install.lock
 
 # Order matters: brew brings the tools the later steps rely on.
-STEPS=(brew zsh macos git vim ssh ruby hosts iterm)
+STEPS=(brew apps zsh macos git vim ssh ruby hosts iterm)
 
 describe_step () {
   case "$1" in
-    brew)  echo "Homebrew, then the packages and apps in brew/Brewfile.core" ;;
+    brew)  echo "Homebrew, then the command line tools in brew/Brewfile.core" ;;
+    apps)  echo "the applications and casks in brew/Brewfile" ;;
     zsh)   echo "Oh My Zsh, .zshrc and .zprofile" ;;
     macos) echo "macOS system preferences, needs your password" ;;
     git)   echo "git config files" ;;
@@ -151,6 +152,7 @@ run_step () {
 
   case "$1" in
     brew)  ~/dotfiles/brew/brew.sh ;;
+    apps)  ~/dotfiles/brew/apps.sh ;;
     zsh)   ~/dotfiles/zsh/zsh.sh ;;
     macos) ~/dotfiles/macOS/macos.sh ;;
     git)   ~/dotfiles/git/git.sh ;;
