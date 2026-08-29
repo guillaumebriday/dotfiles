@@ -15,11 +15,33 @@ if ! hash brew 2>/dev/null; then
   done
 fi
 
+# Homebrew 6 refuses to load anything from a third-party tap until that tap is
+# trusted, which is enough to stop brew bundle dead. The taps a Brewfile asks
+# for are ones we picked ourselves, so trust them before bundling. Anything
+# else on the machine stays untrusted on purpose.
+trust_taps () {
+  local file=$1 tap
+
+  # Older Homebrew has no trust at all, and needs none
+  brew trust --help >/dev/null 2>&1 || return 0
+
+  while read -r tap; do
+    [ -n "$tap" ] || continue
+    echo "==> Trusting the $tap tap"
+    brew trust "$tap"
+  done < <(sed -n "s/^[[:space:]]*tap[[:space:]]*[\'\"]\([^\'\"]*\)[\'\"].*/\1/p" "$file")
+}
+
+# update, upgrade and cleanup are housekeeping: a formula from some tap we never
+# asked for, or one flaky download, should not take the whole bootstrap with it
+
 # Make sure we’re using the latest Homebrew.
-brew update
+brew update || echo "Homebrew did not update, carrying on with the version on disk" >&2
+
+trust_taps ~/dotfiles/brew/Brewfile.core
 
 # Upgrade any already-installed formulae.
-brew upgrade
+brew upgrade || echo "Some formulae did not upgrade, see above." >&2
 
 # One unavailable cask should not stop the rest of the bootstrap
 if ! brew bundle --file ~/dotfiles/brew/Brewfile.core; then
@@ -27,7 +49,7 @@ if ! brew bundle --file ~/dotfiles/brew/Brewfile.core; then
 fi
 
 # Remove outdated versions from the cellar.
-brew cleanup
+brew cleanup || echo "Cleanup did not finish, see above." >&2
 
 # Install Claude Code
 if ! hash claude 2>/dev/null; then
