@@ -57,7 +57,12 @@ bootstrap () {
   fi
 
   if [ -d ~/dotfiles ]; then
-    echo "==> Using the existing ~/dotfiles"
+    echo "==> Updating the existing ~/dotfiles"
+
+    # Local work in there is the user's, not ours to rebase or stash away
+    if ! git -C ~/dotfiles pull --ff-only; then
+      echo "Could not fast-forward ~/dotfiles, running the copy that is there"
+    fi
   else
     echo "==> Cloning $REPO into ~/dotfiles"
     git clone "$REPO" ~/dotfiles
