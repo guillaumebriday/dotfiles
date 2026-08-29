@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+set -euo pipefail
 
 # install oh-my-zsh
 if [ ! -d ~/.oh-my-zsh ]; then
