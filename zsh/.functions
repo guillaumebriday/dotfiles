@@ -92,17 +92,3 @@ update_rubocop () {
   bundle update rubocop rubocop-capybara rubocop-factory_bot rubocop-performance \
     rubocop-rails rubocop-rspec rubocop-rspec_rails
 }
-
-prepare_rails () {
-  cd . # Change Node and Ruby version if needed
-
-  echo 'Installing dependencies...'
-  bundle install --quiet
-
-  if [ -f package.json ]; then
-    yarn install --silent --non-interactive --ignore-engines
-  fi
-
-  echo 'Removing assets & cache...'
-  rm -rf public/assets tmp/cache 2> /dev/null
-}

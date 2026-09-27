@@ -38,7 +38,7 @@ for plugin in zsh-autosuggestions zsh-syntax-highlighting; do
 done
 
 # Source aliases and functions:
-for file in ~/dotfiles/zsh/.{aliases,functions,hidden}; do
+for file in ~/dotfiles/zsh/.{aliases,functions,spendhq,hidden}; do
   [ -r "$file" ] && source "$file"
 done
 
