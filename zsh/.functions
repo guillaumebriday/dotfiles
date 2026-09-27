@@ -17,6 +17,18 @@ fix () {
   claude "Do $* then /opening-pull-requests" -w
 }
 
+# Example: rebase archlet/award-webhook
+rebase () {
+  local branch=$1
+
+  if [[ -z "$branch" ]]; then
+    echo 'usage: rebase <branch>' >&2
+    return 1
+  fi
+
+  claude "Rebase $branch onto origin/develop, then push it" -w
+}
+
 # Example: yarn_run dev
 yarn_run () {
   yarn install --silent && yarn "${1:-dev}"
@@ -59,6 +71,26 @@ rAo () {
   fi
 
   bundle exec rubocop -A --only "$1"
+}
+
+# Run the specs for the files you changed. Extra arguments go to rspec.
+# Example: mrspec --fail-fast
+mrspec () {
+  local specs
+  specs=$(git ls-files --modified --others spec spec_integration)
+
+  if [[ -z "$specs" ]]; then
+    echo 'no modified or untracked spec files' >&2
+    return 1
+  fi
+
+  bundle exec rspec ${=specs} "$@"
+}
+
+# Update the rubocop gems together: an extension pins the rubocop version it needs.
+update_rubocop () {
+  bundle update rubocop rubocop-capybara rubocop-factory_bot rubocop-performance \
+    rubocop-rails rubocop-rspec rubocop-rspec_rails
 }
 
 prepare_rails () {
