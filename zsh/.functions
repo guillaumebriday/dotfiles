@@ -14,7 +14,7 @@ fix () {
     return 1
   fi
 
-  claude "Do $* then /opening-pull-requests" -w
+  claude "Do $* then /opening-pull-requests fast" -w
 }
 
 # Example: rebase archlet/award-webhook
@@ -88,9 +88,23 @@ mrspec () {
 }
 
 # Update the rubocop gems together: an extension pins the rubocop version it needs.
+# Read the gems from Gemfile.lock, since bundle update fails on any gem the project lacks.
 update_rubocop () {
-  bundle update rubocop rubocop-capybara rubocop-factory_bot rubocop-performance \
-    rubocop-rails rubocop-rspec rubocop-rspec_rails
+  local gems
+
+  if [[ ! -f Gemfile.lock ]]; then
+    echo 'no Gemfile.lock in the current directory' >&2
+    return 1
+  fi
+
+  gems=$(awk '/^    rubocop(-[a-z_]+)? \(/ { print $1 }' Gemfile.lock)
+
+  if [[ -z "$gems" ]]; then
+    echo 'no rubocop gems in Gemfile.lock' >&2
+    return 1
+  fi
+
+  bundle update ${=gems}
 }
 
 prepare_rails () {
