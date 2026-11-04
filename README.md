@@ -70,10 +70,20 @@ Naming steps skips the questions. Piped from curl, they go after `-s --`:
 curl -fsSL https://raw.githubusercontent.com/guillaumebriday/dotfiles/master/install.sh | bash -s -- git vim
 ```
 
-`-i` asks which steps to run, which is what the curl one-liner does for you:
+`-i` shows a checklist of the steps, which is what the curl one-liner does for
+you. Everything starts ticked: move with ↑/↓ (or j/k), untick with space, toggle
+everything with `a`, and press enter to confirm.
 
 ```bash
 ./install.sh -i
+```
+
+Keep `brew` or `apps` ticked and the next screens list their packages the same
+way, so you untick the ones you don't want there. The repo's Brewfiles stay
+untouched. Name a step to skip straight to its packages:
+
+```bash
+./install.sh -i apps
 ```
 
 If a step fails, the run stops there and says so, so you can fix it and resume
@@ -91,6 +101,13 @@ brew/brew.sh
 
 It only installs the command line tools, from `brew/Brewfile.core`. The GUI
 applications live in `brew/Brewfile` and are a separate step, see below.
+
+To install a trimmed list without editing the repo, point `BREWFILE_CORE` (for this
+step) or `BREWFILE` (for the apps step) at your own copy:
+
+```bash
+BREWFILE_CORE=~/my-Brewfile.core ./install.sh brew
+```
 
 ### ZSH
 

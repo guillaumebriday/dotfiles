@@ -12,9 +12,13 @@ fi
 # shellcheck source=brew/lib.sh
 source ~/dotfiles/brew/lib.sh
 
-trust_taps ~/dotfiles/brew/Brewfile
+# A trimmed copy can stand in for the repo's list, so a machine can skip some
+# apps without leaving edits to a tracked file behind
+brewfile=${BREWFILE:-$HOME/dotfiles/brew/Brewfile}
+
+trust_taps "$brewfile"
 
 # One unavailable cask should not stop the rest of the bootstrap
-if ! brew bundle --file ~/dotfiles/brew/Brewfile; then
-  echo "Some entries in Brewfile did not install, see above." >&2
+if ! brew bundle --file "$brewfile"; then
+  echo "Some entries in $brewfile did not install, see above." >&2
 fi

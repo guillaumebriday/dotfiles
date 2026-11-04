@@ -29,7 +29,9 @@ usage: install.sh [-i] [step...]
 Steps, in the order they run:
   ${STEPS[*]}
 
-  -i, --interactive  ask which steps to run
+  -i, --interactive  ask which steps to run, then which packages and apps the
+                     brew and apps steps install (install.sh -i apps asks
+                     only about the apps)
   -h, --help         this message
 
 On a brand new machine, run it straight from GitHub. It asks what you want and
@@ -82,43 +84,23 @@ bootstrap () {
   exec bash ~/dotfiles/install.sh "$@"
 }
 
-# The picker writes to the terminal and returns the chosen steps on stdout,
-# because stdin is the piped script in the curl flow.
+# Prints the chosen steps on stdout, see checklist in lib/pick.sh
 pick_steps () {
-  local answer step chosen=()
-
-  {
-    echo
-    echo "What would you like to install?"
-    echo
-  } >/dev/tty
-
-  printf "Everything? [Y/n] " >/dev/tty
-  read -r answer </dev/tty || answer=""
-
-  case "$answer" in
-    [Nn]*) ;;
-    *)
-      printf '%s\n' "${STEPS[@]}"
-      return
-      ;;
-  esac
-
-  echo >/dev/tty
+  local step labels=() chosen i
 
   for step in "${STEPS[@]}"; do
-    printf "  %-5s  %-48s [Y/n] " "$step" "$(describe_step "$step")" >/dev/tty
-    read -r answer </dev/tty || answer=""
-
-    case "$answer" in
-      [Nn]*) ;;
-      *) chosen+=("$step") ;;
+    case "$step" in
+      # Unticking these is how people try to trim them, say where that happens
+      brew|apps) labels+=("$(printf '%-5s  %s \033[2m(pick which on the next screen)\033[0m' "$step" "$(describe_step "$step")")") ;;
+      *) labels+=("$(printf '%-5s  %s' "$step" "$(describe_step "$step")")") ;;
     esac
   done
 
-  if [ ${#chosen[@]} -gt 0 ]; then
-    printf '%s\n' "${chosen[@]}"
-  fi
+  chosen=$(checklist "What would you like to install?" "${labels[@]}") || exit 130
+
+  for i in $chosen; do
+    echo "${STEPS[i]}"
+  done
 }
 
 # One install at a time: a second run alongside the first would have two brews
@@ -128,7 +110,7 @@ acquire_lock () {
 
   if mkdir "$LOCK" 2>/dev/null; then
     echo $$ >"$LOCK/pid"
-    trap 'rm -rf "$LOCK"' EXIT
+    owns_lock=1
     return
   fi
 
@@ -143,7 +125,36 @@ acquire_lock () {
   rm -rf "$LOCK"
   mkdir "$LOCK"
   echo $$ >"$LOCK/pid"
-  trap 'rm -rf "$LOCK"' EXIT
+  owns_lock=1
+}
+
+# Another run's lock is not ours to remove, hence the flag
+cleanup () {
+  if [ "$owns_lock" -eq 1 ]; then
+    rm -rf "$LOCK"
+  fi
+
+  if [ -n "$workdir" ]; then
+    rm -rf "$workdir"
+  fi
+}
+
+# Hands the step a trimmed copy of its Brewfile through the variable it reads,
+# so the tracked file is never edited for one machine
+choose_packages () {
+  local var=$1 file=$2 label=$3
+
+  # Somebody already pointed the step at their own copy, so pick from that
+  if [ -n "${!var:-}" ]; then
+    file=${!var}
+  fi
+
+  if [ -z "$workdir" ]; then
+    workdir=$(mktemp -d)
+  fi
+
+  pick_brew_entries "$file" "Which $label should be installed?" >"$workdir/$var"
+  export "${var}=$workdir/$var"
 }
 
 run_step () {
@@ -184,6 +195,9 @@ if [ -z "${BASH_SOURCE[0]:-}" ]; then
 fi
 
 interactive=0
+owns_lock=0
+workdir=""
+trap cleanup EXIT
 
 while [ $# -gt 0 ]; do
   case "$1" in
@@ -199,12 +213,18 @@ while [ $# -gt 0 ]; do
   esac
 done
 
+if [ "$interactive" -eq 1 ]; then
+  # shellcheck source=lib/pick.sh
+  source ~/dotfiles/lib/pick.sh
+fi
+
 if [ "$interactive" -eq 1 ] && [ $# -eq 0 ]; then
   selected=()
+  chosen_steps=$(pick_steps) || exit 130
 
   while read -r step; do
     [ -n "$step" ] && selected+=("$step")
-  done <<<"$(pick_steps)"
+  done <<<"$chosen_steps"
 
   if [ ${#selected[@]} -eq 0 ]; then
     echo "Nothing selected, so nothing to do."
@@ -230,6 +250,15 @@ for step in "$@"; do
       ;;
   esac
 done
+
+if [ "$interactive" -eq 1 ]; then
+  for step in "$@"; do
+    case "$step" in
+      brew) choose_packages BREWFILE_CORE ~/dotfiles/brew/Brewfile.core "command line tools" ;;
+      apps) choose_packages BREWFILE ~/dotfiles/brew/Brewfile "applications" ;;
+    esac
+  done
+fi
 
 acquire_lock
 

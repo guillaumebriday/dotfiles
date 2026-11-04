@@ -18,20 +18,24 @@ fi
 # shellcheck source=brew/lib.sh
 source ~/dotfiles/brew/lib.sh
 
+# A trimmed copy can stand in for the repo's list, so a machine can skip some
+# tools without leaving edits to a tracked file behind
+brewfile=${BREWFILE_CORE:-$HOME/dotfiles/brew/Brewfile.core}
+
 # update, upgrade and cleanup are housekeeping: a formula from some tap we never
 # asked for, or one flaky download, should not take the whole bootstrap with it
 
 # Make sure we’re using the latest Homebrew.
 brew update || echo "Homebrew did not update, carrying on with the version on disk" >&2
 
-trust_taps ~/dotfiles/brew/Brewfile.core
+trust_taps "$brewfile"
 
 # Upgrade any already-installed formulae.
 brew upgrade || echo "Some formulae did not upgrade, see above." >&2
 
 # One unavailable cask should not stop the rest of the bootstrap
-if ! brew bundle --file ~/dotfiles/brew/Brewfile.core; then
-  echo "Some entries in Brewfile.core did not install, see above." >&2
+if ! brew bundle --file "$brewfile"; then
+  echo "Some entries in $brewfile did not install, see above." >&2
 fi
 
 # Remove outdated versions from the cellar.
